@@ -96,6 +96,7 @@
                       class="z-10 hidden font-normal bg-gray-200 divide-y rounded-lg shadow w-80 md:w-44">
                       <ul class="py-2 text-sm text-gray-900" aria-labelledby="dropdownLargeButton">
                           <x-nav-link href="/surat">Pembuatan Surat</x-nav-link>
+                        <x-nav-link href="/status-surat">Status Pengajuan</x-nav-link>
                       </ul>
                   </div>
               </li>

@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 Route::get('/', function () {
     $berita = [
@@ -104,7 +107,13 @@ Route::get('/surat', function () {
   return view('surat', [
     'title' => 'surat'
   ]);
-});
+})->middleware('auth');
+
+Route::get('/status-surat', function () {
+  return view('statusSurat', [
+    'title' => 'status surat'
+  ]);
+})->middleware('auth');
 
 Route::get('/surat/sktm', function () {
   return view('daftarSurat.sktm', [
@@ -112,8 +121,14 @@ Route::get('/surat/sktm', function () {
   ]);
 });
 
-Route::get('/login', function () {
-  return view('login.index', [
-    'title' => 'login'
-  ]);
-});
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest') ;
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/admin', [LoginController::class, 'admin']);
+Route::post('/admin', [LoginController::class, 'authAdmin']);
+
+Route::resource('/dashboard', AdminController::class)->middleware('admin');
+Route::post('/logout', [LoginController::class, 'logout']);
