@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Klee+One:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .CardSerbaSerbi{
+    @apply md:col-span-3 col-span-6 py-20 md:py-16 bg-cover block text-white bg-no-repeat bg-primary-50 bg-blend-multiply
+  }
+
+  .ImageBerita{
+    @apply absolute md:h-[278px] h-60 w-full -z-10 drop-shadow-lg bg-cover bg-center bg-no-repeat border-2 object-cover object-center
+  }
+
+  .btn-berita{
+    @apply bg-secondary-200 w-fit block hover:bg-secondary-300 py-2 px-6 font-medium text-base rounded-sm text-white
+  }
+  
+  .CardSurat {
+    @apply col-span-12 md:col-span-3  mb-6 md:mb-10 rounded-xl shadow-xl overflow-hidden relative
+  }
+}
