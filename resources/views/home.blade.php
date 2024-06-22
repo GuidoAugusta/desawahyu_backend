@@ -9,7 +9,7 @@
             <span class="text-secondary-200">creative</span>village.id
         </h1>
         <p class="mb-8 text-base font-bold text-white md:text-2xl sm:px-16 lg:px-48">
-            SISTEM INFORMASI
+            <span class="typing1"></span>
         </p>
         <!-- search -->
         <form class="max-w-xl mx-auto">
@@ -33,53 +33,62 @@
             </div>
         </form>
         <!-- menu jumbotron -->
-        <div class="w-full md:mt-5 mt-10 flex flex-wrap justify-evenly gap-1">
-          <a href="/petadesa" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-          <img src="icons/peta_desa.png" alt="peta_desa.png"
-              class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-          <span class="text-center text-xs md:text-sm block break-words text-primary-300">Peta Desa</span>
-          </a>
-          <a href="/surat" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-          <img src="icons/buat_surat.png" alt="buat_surat.png"
-              class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-          <span class="text-center text-xs md:text-sm block break-words text-primary-300">Buat Surat</span>
-          </a>
-          <a href="/arsipdesa" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/arsip_berita.png" alt="arsip_berita.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Arsip Berita</span>
-          </a>
-          <a href="/produkdesa" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/produk_desa.png" alt="produk_desa.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Produk Desa</span>
-          </a>
-          <a href="/galeri" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/galeri.png" alt="galeri.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Galeri</span>
-          </a>
-          <a href="/pembangunan" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/pembangunan.png" alt="pembangunan.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Pembangunan</span>
-          </a>
-          <a href="/keuangandesa" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/keuangan_desa.png" alt="keuangan_desa.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Keuangan Desa</span>
-          </a>
-          <a href="/apbd" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/status_desa.png" alt="status_desa.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Status Desa</span>
-          </a>
-          <a href="/pengaduan" class="inline-block mb-1 px-4 py-3 lg:p-3 space-y-2 group dark:border dark:border-gray-500 bg-white rounded-lg">
-            <img src="icons/pengaduan.png" alt="pengaduan.png"
-                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-125 transition duration-200" />
-            <span class="text-center text-xs md:text-sm block break-words text-primary-300">Pengaduan</span>
-          </a>
-        </div>
+        <div class="w-full md:mt-5 mt-10 flex flex-wrap justify-evenly gap-3">
+            <a href="#"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/peta_desa.png" alt="peta_desa"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300 img-fluid" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Peta Desa</span>
+            </a>
+            <a href="src/page/login.html"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/buat_surat.png" alt="buat_surat"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300 img-fluid" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Buat surat</span>
+            </a>
+            <a href="#berita"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/arsip_berita.png" alt="arsip_berita"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Arsip Berita</span>
+            </a>
+            <a href="#"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/produk_desa.png" alt="produk_desa"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Produk Desa</span>
+            </a>
+            <a href="#galeri"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/galeri.png" alt="galeri"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Galeri</span>
+            </a>
+            <a href=""
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/pembangunan.png" alt="pembangunan"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Pembangunan</span>
+            </a>
+            <a href="#apbd"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/keuangan_desa.png" alt="keuangan_desa"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Keuangan Desa</span>
+            </a>
+            <a href="#"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/status_desa.png" alt="status_desa"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Status Desa</span>
+            </a>
+            <a href="#"
+              class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
+              <img src="icons/pengaduan.png" alt="pengaduan"
+                class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300" />
+              <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Pengaduan</span>
+            </a>
+          </div>
     </div>
   </section>
   <!-- jumbotron end -->
@@ -91,97 +100,85 @@
         <!-- card start -->
         <div class="CardSerbaSerbi bg-[url('../../public/images/sejarah_desa.png')]">
           <a href="#" class="">
-            <div class="bg-warning-200 w-32 h-20"></div>
+            <div class="bg-warning-200 w-32 h-16"></div>
             <div class="px-6 py-6">
-              <h4 class="font-bold text-2xl">Sejarah indo</h4>
-                <p class="line-clamp-6 md:text-sm text-base mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias suscipit
-                  voluptates tempora. Molestiae laborum consequuntur rerum harum deserunt optio soluta cum. Molestiae
-                  earum,
-                  nihil assumenda tenetur ab amet incidunt quidem libero illo et id inventore adipisci porro consectetur
-                  accusamus odio! Asperiores nesciunt, debitis tempora harum consectetur aliquid! Eveniet quasi reiciendis
-                  fuga neque nisi culpa iste voluptates commodi placeat similique nostrum eligendi error doloribus ipsa
-                  magni necessitatibus voluptatibus beatae consequatur vero, sed ea nobis rerum vitae corporis.
-                  Consectetur
-                  impedit quia iste.</p>
-              </div>
-            </a>
-          </div>
-          <!-- card end -->
-          <!-- card start -->
-          <div class="CardSerbaSerbi bg-[url('../../public/images/tentang_kami.png')]">
-            <a href="#" class="">
-              <div class="bg-warning-200 w-32 h-20"></div>
-              <div class="px-6 py-6">
-                <h4 class="font-bold text-2xl">Tentang Kami</h4>
-                <p class="line-clamp-6 md:text-sm text-base mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias suscipit
-                  voluptates tempora. Molestiae laborum consequuntur rerum harum deserunt optio soluta cum. Molestiae
-                  earum,
-                  nihil assumenda tenetur ab amet incidunt quidem libero illo et id inventore adipisci porro consectetur
-                  accusamus odio! Asperiores nesciunt, debitis tempora harum consectetur aliquid! Eveniet quasi reiciendis
-                  fuga neque nisi culpa iste voluptates commodi placeat similique nostrum eligendi error doloribus ipsa
-                  magni necessitatibus voluptatibus beatae consequatur vero, sed ea nobis rerum vitae corporis.
-                  Consectetur
-                  impedit quia iste.</p>
-              </div>
-            </a>
-          </div>
-          <!-- card end -->
-          <!-- card start -->
-          <div class="CardSerbaSerbi bg-[url('../../public/images/visi_desa.png')]">
-            <a href="#" class="">
-              <div class="bg-warning-200 w-32 h-20"></div>
-              <div class="px-6 py-6">
-                <h4 class="font-bold text-2xl">Visi Desa</h4>
-                <p class="line-clamp-6 md:text-sm text-base mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias suscipit
-                  voluptates tempora. Molestiae laborum consequuntur rerum harum deserunt optio soluta cum. Molestiae
-                  earum,
-                  nihil assumenda tenetur ab amet incidunt quidem libero illo et id inventore adipisci porro consectetur
-                  accusamus odio! Asperiores nesciunt, debitis tempora harum consectetur aliquid! Eveniet quasi reiciendis
-                  fuga neque nisi culpa iste voluptates commodi placeat similique nostrum eligendi error doloribus ipsa
-                  magni necessitatibus voluptatibus beatae consequatur vero, sed ea nobis rerum vitae corporis.
-                  Consectetur
-                  impedit quia iste.</p>
-              </div>
-            </a>
-          </div>
-          <!-- card end -->
-          <!-- card start -->
-          <div class="CardSerbaSerbi bg-[url('../../public/images/misi_desa.png')]">
-            <a href="#" class="">
-              <div class="bg-warning-200 w-32 h-20"></div>
-              <div class="px-6 py-6">
-                <h4 class="font-bold text-2xl">Misi Desa</h4>
-                <p class="line-clamp-6 md:text-sm text-base mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias suscipit
-                  voluptates tempora. Molestiae laborum consequuntur rerum harum deserunt optio soluta cum. Molestiae
-                  earum,
-                  nihil assumenda tenetur ab amet incidunt quidem libero illo et id inventore adipisci porro consectetur
-                  accusamus odio! Asperiores nesciunt, debitis tempora harum consectetur aliquid! Eveniet quasi reiciendis
-                  fuga neque nisi culpa iste voluptates commodi placeat similique nostrum eligendi error doloribus ipsa
-                  magni necessitatibus voluptatibus beatae consequatur vero, sed ea nobis rerum vitae corporis.
-                  Consectetur
-                  impedit quia iste.</p>
-              </div>
-            </a>
-          </div>
-          <!-- card end -->
+              <h4 class="font-bold text-2xl">Sejarah Desa</h4>
+              <p class="line-clamp-6 md:text-sm text-base mt-3">Desa Rawasari adalah sebuah desa yang terletak di
+                dataran rendah, yang khas dengan banyaknya rawa-rawa di sekitarnya. Sejarah desa ini bermula dari zaman
+                dahulu ketika wilayah tersebut masih berupa hutan lebat dan rawa-rawa yang luas. Nama "Rawasari" berasal
+                dari gabungan kata "rawa" yang merujuk pada banyaknya rawa di daerah tersebut, dan "sari" yang berarti
+                inti atau yang utama. </p>
+            </div>
+          </a>
         </div>
-        <div class="grid grid-cols-6 md:col-span-6 col-span-12 md:order-last order-first items-center">
-          <div class="col-span-6">
-            <h1 class="md:text-4xl text-2xl text-primary-300 font-imperial-script">Sistem Informasi Creative Village ID
-            </h1>
-            <h1 class="md:text-6xl text-4xl font-bold my-3">Serba Serbi Desa</h1>
-            <p class="font-light md:text-lg text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, at
-              aliquam tenetur
-              nesciunt et, obcaecati illo odit dolores tempore soluta enim nostrum nisi, blanditiis sit dolorem. Placeat,
-              veniam omnis? Ab, doloremque id vel doloribus commodi perferendis harum enim minima laboriosam cum ea.
-              Temporibus recusandae ex deleniti, rerum laudantium voluptatem vero qui odio aliquid consectetur quae
-              ratione
-              ipsam veniam excepturi dolor cumque quaerat hic sint adipisci sapiente? Aperiam, non! Unde nam minima vitae
-              voluptatibus magni esse est dolor, perspiciatis expedita labore.</p>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="CardSerbaSerbi bg-[url('../../public/images/tentang_kami.png')]">
+          <a href="#" class="">
+            <div class="bg-warning-200 w-32 h-16"></div>
+            <div class="px-6 py-6">
+              <h4 class="font-bold text-2xl">Tentang Kami</h4>
+              <p class="line-clamp-6 md:text-sm text-base mt-3">Selamat datang di Desa Rawasari, Desa Rawasari terletak
+                di dataran rendah dan dikenal dengan keunikan ekosistem rawa-rawanya. Mayoritas penghasilan desa ini
+                berasal dari pertanian padi, yang menjadi sumber utama kehidupan masyarakat setempat.</p>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="CardSerbaSerbi bg-[url('../../public/images/visi_desa.png')]">
+          <a href="#" class="">
+            <div class="bg-warning-200 w-32 h-16"></div>
+            <div class="px-6 py-6">
+              <h4 class="font-bold text-2xl">Visi Desa</h4>
+              <p class="line-clamp-6 md:text-sm text-base mt-3">Desa Rawasari menjadi desa yang mandiri, berkelanjutan,
+                dan sejahtera dengan memaksimalkan potensi pertanian padi dan menjaga kelestarian ekosistem dataran
+                rendah, serta meningkatkan kualitas hidup masyarakat melalui pendidikan, kesehatan, dan infrastruktur
+                yang memadai.</p>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="CardSerbaSerbi bg-[url('misi_desa.png')]">
+          <a href="#" class="">
+            <div class="bg-warning-200 w-32 h-16"></div>
+            <div class="px-6 py-6">
+              <h4 class="font-bold text-2xl">Misi Desa</h4>
+              <p class="line-clamp-6 md:text-sm text-base mt-3">
+                Adapun Misi yang akan kami wujudkan yaitu: <br>
+                1. Meningkatkan produktivitas dan kualitas pertanian padi melalui penerapan teknologi pertanian yang
+                ramah lingkungan dan pelatihan bagi petani, sehingga mampu meningkatkan hasil panen dan menjaga
+                kelestarian lingkungan.
+                2. Mensejahterakan masyarakat dengan program-program yang dapat mengangkat ekonomi, seperti menyediakan
+                tempat untuk menjual hasil panen secara langsung, mengadakan pasar desa, dan membangun kemitraan dengan
+                pelaku usaha.
+                3. Memfasilitasi akses jalan yang baik, baik menuju sawah maupun di dalam kampung, untuk memperlancar
+                distribusi hasil panen dan mobilitas masyarakat, serta meningkatkan kualitas infrastruktur desa secara
+                keseluruhan.</p>
+            </div>
+          </a>
+        </div>
+        <!-- card end -->
+      </div>
+      <div class="grid grid-cols-6 md:col-span-6 col-span-12 md:order-last order-first items-center mx-3">
+        <div class="col-span-6">
+          <h1 class="md:text-4xl text-2xl text-primary-300 font-imperial-script">Sistem Informasi Creative Village ID
+          </h1>
+          <h1 class="md:text-6xl text-4xl font-bold my-3">Serba Serbi Desa</h1>
+          <p class="font-light md:text-lg text-base"> <span class="font-semibold">Kenali Kampung Rawasari Lebih
+              Dekat</span> <br>
+
+            Website ini dikelola oleh Pemerintah Desa Rawasari, Kecamatan Malind, Kabupaten Merauke, yang bertujuan
+            untuk membuka akses seluas-luasnya kepada masyarakat desa. Di sini, Anda dapat menemukan informasi terkait
+            berbagai aspek kehidupan di Desa Rawasari, termasuk pengelolaan dana desa, capaian pembangunan, kegiatan
+            masyarakat, serta program-program pemberdayaan ekonomi dan lingkungan.
+            <br>
+            Melalui platform ini, kami berupaya memberikan transparansi dalam pengelolaan desa dan memfasilitasi
+            komunikasi yang lebih baik antara pemerintah desa dan masyarakat. Anda dapat mengikuti perkembangan terbaru
+            desa, berpartisipasi dalam diskusi, dan memberikan masukan untuk kemajuan bersama. Selamat datang di Desa
+            Rawasari, tempat kami hidup harmonis dengan alam dan berkembang bersama.
+          </p>
         </div>
       </div>
     </div>
@@ -304,7 +301,7 @@
       <swiper-container class="mySwiper mt-10" autoplay="true" delay="1000" space-between="30" slides-per-view="auto"
         loop="true" effect="coverflow" coverflow-effect='{"rotate": 0, "stretch": 0, "depth": 100, "modifier": 2}'
         centered-slides="true">
-        @foreach ($galeri as $item)    
+        @foreach ($galeri as $item)
         <swiper-slide class="w-fit px-2 bg-white">
           <a href="{{ $item['url'] }}" class=" ">
             <img src="{{$item['img'] }}" alt=""
@@ -319,6 +316,12 @@
 
   <x-apbd></x-apbd>
   <x-footer></x-footer>
-  
+
   <script src="js/script.js"></script>
+
+  <!-- Link to Typed.js library -->
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script src="js/home.js"></script>
+
 </x-layout>
