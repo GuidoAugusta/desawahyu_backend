@@ -7,6 +7,7 @@ use App\Http\Requests\StoreBeritaRequest;
 use App\Http\Requests\UpdateBeritaRequest;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Str;
 
 class BeritaController extends Controller
 {
@@ -36,24 +37,20 @@ class BeritaController extends Controller
      */
     public function store(StoreBeritaRequest $request)
     {
-        return $request;
-        // $validated = $request->validate([
-        //     'title' => 'required|max:255',
-        //     'content' => 'required|text',
-        //     'image_path' => 'required|mimes:jpg,jpeg,png|max:2048'
-        // ]);
-        // // dd($validated);
+        $validatedData = $request->validate(
+            [
+                'title' => 'required|max:255',
+                'slug' => 'required|unique:beritas',
+                // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'content' => 'required',
+            ]
+        );
 
-        // // Menyimpan path gambar jika ada
-        // if ($request->hasFile('image')) {
-        //     $imagePath = $request->file('image')->store('images', 'public');
-        // } else {
-        //     $imagePath = null;
-        // }
+        $validatedData['excerpt'] = Str::limit(str_replace("\n", " ", strip_tags($request->content)), 300, '...');
+        $validatedData['published_at'] = now();
 
-        // Berita::create($validated);
-
-        // return redirect('/dashboard/berita')->with('status', 'Post created successfully.');
+        Berita::create($validatedData);
+        return redirect('/dashboard/berita')->with('success', 'Berita berhasil ditambahkan');
     }
 
     /**
@@ -72,7 +69,10 @@ class BeritaController extends Controller
      */
     public function edit(Berita $berita)
     {
-        //
+        return view('dashboard.berita.edit', [
+            'title' => 'edit berita',
+            'berita' => $berita
+        ]);
     }
 
     /**
@@ -80,7 +80,24 @@ class BeritaController extends Controller
      */
     public function update(UpdateBeritaRequest $request, Berita $berita)
     {
-        //
+        $rules =
+            [
+                'title' => 'required|max:255',
+                // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'content' => 'required',
+            ];
+
+        if ($request->slug != $berita->slug) {
+            $rules['slug'] = 'required|unique:beritas';
+        }
+
+        $validatedData = $request->validate($rules);
+
+        $validatedData['excerpt'] = Str::limit(str_replace("\n", " ", strip_tags($request->content)), 300, '...');
+        $validatedData['published_at'] = now();
+
+        Berita::where('id', $berita->id)->update($validatedData);
+        return redirect('/dashboard/berita')->with('success', 'Berita berhasil diubah');
     }
 
     /**
@@ -88,7 +105,8 @@ class BeritaController extends Controller
      */
     public function destroy(Berita $berita)
     {
-        //
+        Berita::destroy($berita->id);
+        return redirect('/dashboard/berita')->with('success', 'Berita berhasil dihapus');
     }
 
     // public function checkSlug(Request $request)

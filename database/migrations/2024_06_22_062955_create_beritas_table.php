@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('beritas', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('content');
-            $table->string('image');
             $table->string('slug')->unique();
+            // $table->string('image');
+            $table->text('content');
+            $table->text('excerpt');
             $table->unsignedBigInteger('views_count')->default(0);
             $table->unsignedBigInteger('comments_count')->default(0);
             $table->unsignedBigInteger('likes_count')->default(0);

@@ -18,12 +18,14 @@ class BeritaFactory extends Factory
     public function definition(): array
     {
         $title = $this->faker->sentence;
+        $content = $this->faker->paragraphs(10, true);
 
         return [
             'title' => $title,
-            'content' => $this->faker->paragraphs(10, true),
-            'image' => 'https://picsum.photos/1200/600?random=' . rand(1, 1000),
             'slug' => Str::slug($title),
+            // 'image' => 'https://picsum.photos/1200/600?random=' . rand(1, 1000),
+            'content' => $content,
+            'excerpt' => Str::limit(str_replace("\n", " ", strip_tags($content)), 300, '...'),
             'views_count' => $this->faker->numberBetween(0, 1000),
             'comments_count' => $this->faker->numberBetween(0, 100),
             'likes_count' => $this->faker->numberBetween(0, 500),

@@ -8,7 +8,7 @@ use App\Http\Controllers\RegisterController;
 use App\Models\Berita;
 
 Route::get('/', function () {
-  $berita = Berita::all();
+  $beritas = Berita::all();
 
   $galeri = [
     [
@@ -39,7 +39,7 @@ Route::get('/', function () {
 
   return view('home', [
     'title' => 'home',
-    'berita' => $berita,
+    'beritas' => $beritas,
     'galeri' => $galeri
   ]);
 });
