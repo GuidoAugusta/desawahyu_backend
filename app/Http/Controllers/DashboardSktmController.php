@@ -88,7 +88,7 @@ class DashboardSktmController extends Controller
       Sktm::destroy($sktm->id);
       Storage::delete($sktm->ktp);  
 
-      return redirect('/dashboard/sktm')->with('status', 'Delete Posts Success');
+      return redirect('/dashboard/sktm')->with('deleteSuccess', 'Data berhasil dihapus');
     }
 
     public function acceptStatus($id){
@@ -117,7 +117,7 @@ class DashboardSktmController extends Controller
       }
       $sktm->save();
 
-      return redirect()->back()->with('success', 'Status berhasil diubah.');
+      return redirect()->back()->with('reject', 'Berhasil Di tolak.');
     }
 
     public function cetak($id)

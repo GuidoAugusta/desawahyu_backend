@@ -151,7 +151,7 @@ Route::post('/send-email', [EmailController::class, 'sendEmail']);
 
 // sktm controller
 Route::get('/cetak/sktm/{id}', [SktmController::class, 'cetak']);
-Route::delete('/hapus/sktm/{nik}', [SktmController::class, 'destroy']);
+Route::delete('/hapus/sktm/{id}', [SktmController::class, 'destroy']);
 
 Route::get('/test' , function () {
   return view('test', [

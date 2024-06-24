@@ -27,6 +27,6 @@ class EmailController extends Controller
 
     Mail::to($email)->send(new SendPdfMail($pdfPath, $nama, $surat));
     Storage::delete($pdfPath);  
-    return back()->with('success', 'Pdf Berhasil dikirim.');
+    return back()->with('SendSuccess', 'Surat Berhasil dikirim.');
   }
 }

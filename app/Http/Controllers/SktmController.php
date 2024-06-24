@@ -60,21 +60,23 @@ class SktmController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-      public function destroy($nik)
+      public function destroy($id)
       {
-        $sktm = Sktm::where('nik', $nik)->first();
-        // Sktm::destroy($sktm); error
+        $sktm = Sktm::find($id);
+        // return dd($sktm);
+        Sktm::destroy($sktm);
         if ($sktm) {
           Storage::delete($sktm->ktp);
           $sktm->delete();
   
-          return redirect('/status-surat')->with('success', 'Data berhasil dihapus');
+          return redirect('/status-surat')->with('deleteSuccess', 'Data berhasil dihapus');
         }
       }
 
-    public function cetak($nik)
+    public function cetak($id)
     {
-      $sktm = Sktm::where('nik', $nik)->first();
+      // $sktm = Sktm::where('nik', $nik)->first();
+      $sktm = Sktm::find($id);
       if (!$sktm) {
         return redirect()->back()->with('error', 'Data tidak ditemukan');
       }

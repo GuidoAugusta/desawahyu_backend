@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+  <title>cetak</title>
 
   <style>
     @page {
@@ -23,7 +24,7 @@
     </div>
   </aside>
 
-  <div class="flex justify-center bg-slate-400 py-7 print:py-0"> 
+  <div class="flex justify-center py-7 print:py-0"> 
     <div class="max-w-[210mm] min-h-[297mm] bg-white p-8 w-full border-dashed border-4 rounded-lg border-gray-200 print:border-none print:rounded-none ">
       <header class="flex items-center justify-center border-b-2 print:border-b print:pb-1 relative border-black">
         <div class="h-24 absolute top-0 -left-5 overflow-hidden hidden xl:block print:left-5 print:-top-2 print:block">
@@ -86,7 +87,7 @@
               </div>      
               <div class="col-span-2" >
                 <span id="lahirArea">{{ ucfirst(trans($sktm->tempat)) }}</span>,
-                <span id="dateArea">{{ ucfirst(trans($sktm->tanggal_lahir)) }}</span>
+                <span id="dateArea">{{ \Carbon\Carbon::parse($sktm->tanggal_lahir)->format('d-m-Y') }}</span>
               </div>
             </div>
             <div class="grid grid-cols-3 ">

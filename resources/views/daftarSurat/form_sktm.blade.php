@@ -212,6 +212,7 @@
                 <p>Mengetahui</p>
                 <P>CAMAT LABUAPI</P>
                 <p class="border-b border-black mt-36"></p>
+                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
               </div>
               </div>
                 <div class="w-1/2 text-center">
@@ -219,6 +220,7 @@
                       <p>TERONG SAWAH,<span id="dateSurat"></span></p>
                       <P>KEPALA DESA TERONG SAWAH</P>
                       <p class="border-b border-black mt-36"></p>
+                      {{ \Carbon\Carbon::now()->format('d-m-Y') }}
                     </div>
                 </div>
               </div>

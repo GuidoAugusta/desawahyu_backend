@@ -23,36 +23,6 @@ class DatabaseSeeder extends Seeder
           'email' => 'test@gmail.com',
         ]);
 
-        Sktm::factory()->create([
-          'nama' => 'Andi Mahardika Mulya',
-          'nik' => '1234567890123456',
-          'jenis_kelamin' => 'Laki-laki',
-          'tempat' => 'Bandung',
-          'tanggal_lahir' => '2000-01-01',
-          'agama' => 'Islam',
-          'pekerjaan' => 'Pelajar',
-          'alamat' => 'Jl. Jalan',
-          'email' => 'andi.mahardika.mulya@gmail.com',
-          'ktp' => 'ktp.jpg',
-          'status' => 'Diterima',
-          'user_id' => 5,
-        ]);
-
-        Sktm::factory()->create([
-          'nama' => 'john doe',
-          'nik' => '2345678901234567',
-          'jenis_kelamin' => 'Laki-laki',
-          'tempat' => 'Bandung',
-          'tanggal_lahir' => '2000-01-01',
-          'agama' => 'Islam',
-          'pekerjaan' => 'Pelajar',
-          'alamat' => 'Jl. Jalan',
-          'email' => 'andi.mahardika.mulya@gmail.com',
-          'ktp' => 'ktp.jpg',
-          'status' => 'Diterima',
-          'user_id' => 1,
-        ]);
-
         User::factory()->create([
           'nama' => 'Andi Mahardika Mulya',
           'email' => 'andi.mahardika.mulya@gmail.com',

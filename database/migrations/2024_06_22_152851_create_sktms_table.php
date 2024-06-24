@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sktms', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->char('nik', 16)->unique();
+            $table->char('nik', 16);
             $table->string('jenis_kelamin');
             $table->string('tempat');
             $table->date('tanggal_lahir');
