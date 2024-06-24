@@ -1,7 +1,7 @@
-var options = {
+let options = {
     strings: ["SISTEM INFORMASI KAMPUNG RAWASARI"],
     typeSpeed: 100,
-    backSpeed: 90,
+    backSpeed: 95,
     loop: true,
 };
-var typed = new Typed(".typing1", options);
+let typed = new Typed(".typing1", options);

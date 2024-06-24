@@ -16,19 +16,16 @@ Route::get('/', function () {
             agar tetap bersih dan berfungsi dengan baik, sehingga mencegah banjir dan menjaga kebersihan lingkungan.
             Selokan yang terawat dengan baik sangat penting untuk menjaga kesehatan dan kenyamanan lingkungan tempat
             tinggal kita.
-            <br>
             Dalam kerja bakti ini, warga bergotong royong membersihkan sampah dan lumpur yang menghambat aliran air di
             selokan. Selain itu, perawatan selokan juga meliputi perbaikan kerusakan kecil yang mungkin terjadi, seperti
             memperbaiki dinding selokan yang retak atau memasang kembali penutup selokan yang hilang. Kegiatan ini
             dilakukan secara berkala, biasanya setiap bulan, dan dijadwalkan sedemikian rupa agar semua warga dapat
             berpartisipasi.
-            <br>
             Kerja bakti perawatan selokan tidak hanya bertujuan untuk menjaga kebersihan, tetapi juga untuk mempererat
             tali silaturahmi antarwarga. Dengan bekerja bersama-sama, warga Desa Rawasari dapat saling mengenal lebih
             dekat dan memperkuat rasa kebersamaan serta kepedulian terhadap lingkungan. Selain itu, kegiatan ini juga
             menjadi sarana edukasi bagi warga, terutama anak-anak, mengenai pentingnya menjaga lingkungan dan manfaat
             dari gotong royong.
-            <br>
             Untuk mendukung kelancaran kegiatan kerja bakti, pemerintah desa menyediakan alat dan bahan yang diperlukan,
             seperti sekop, sapu, karung sampah, dan peralatan lainnya. Warga juga diimbau untuk membawa alat kebersihan
             pribadi yang dimiliki.',
@@ -41,15 +38,13 @@ Route::get('/', function () {
           'description' => 'Di Desa Rawasari, program pembagian bantuan sosial (bansos) kepada lansia dilaksanakan secara berkala setiap
             bulan. Program ini bertujuan untuk memberikan dukungan kepada lansia yang membutuhkan dalam memenuhi
             kebutuhan sehari-hari mereka.
-            <br>
             Setiap bulannya, pemerintah desa bersama dengan tokoh masyarakat dan karang taruna mengatur distribusi
             bansos secara terorganisir. Proses ini dimulai dengan pendataan lansia di desa untuk menentukan penerima
             bansos berdasarkan kriteria yang telah ditetapkan, seperti usia dan kondisi ekonomi.
-            <br>
             Pembagian bansos dilakukan dengan transparan dan adil. Setiap lansia penerima mendapatkan paket sembako yang
             terdiri dari bahan makanan pokok, seperti beras, minyak goreng, gula, dan mie instan, serta beberapa
             kebutuhan sehari-hari lainnya sesuai dengan kebutuhan mereka.
-            <br>
+
             Kegiatan ini tidak hanya sebagai bentuk dukungan material, tetapi juga sebagai wujud perhatian dan
             kepedulian masyarakat terhadap lansia yang berjasa dalam membangun dan menjaga tradisi serta nilai-nilai
             kebersamaan di Desa Rawasari. Melalui pembagian bansos kepada lansia, diharapkan mereka dapat merasa
@@ -64,15 +59,12 @@ Route::get('/', function () {
             masyarakat
             desa. Kegiatan ini dilakukan untuk membersihkan dan mempersiapkan lingkungan desa agar siap menyambut bulan
             suci Ramadhan dengan baik.
-            <br>
             Kerja bakti menjelang Ramadhan meliputi berbagai aktivitas, seperti pembersihan lingkungan desa, termasuk
             jalan-jalan utama, tempat ibadah, dan area publik lainnya. Warga desa bekerja bersama-sama membersihkan
             sampah, menyapu dan mengepel jalan, membersihkan saluran air, serta merapikan taman dan pekarangan.
-            <br>
             Selain membersihkan lingkungan fisik, kerja bakti ini juga mencakup persiapan untuk kegiatan ibadah dan
             kegiatan sosial selama bulan Ramadhan. Misalnya, mempersiapkan tempat-tempat untuk berbuka puasa bersama
             atau menyediakan sumbangan makanan bagi yang membutuhkan.
-            <br>
             Partisipasi aktif seluruh warga sangat penting dalam kegiatan kerja bakti menjelang Ramadhan ini. Kegiatan
             ini bukan hanya sebagai kewajiban sosial, tetapi juga sebagai bentuk kebersamaan dan kepedulian terhadap
             lingkungan serta persiapan spiritual dalam menyambut bulan suci Ramadhan. Dengan gotong royong dan semangat
@@ -86,20 +78,16 @@ Route::get('/', function () {
           'description' => ' Di Desa Rawasari, santunan anak yatim piatu adalah salah satu bentuk kepedulian dan kegiatan sosial yang
             dilakukan secara rutin oleh masyarakat desa. Program ini bertujuan untuk memberikan bantuan kepada anak-anak
             yang kehilangan salah satu atau kedua orang tua mereka.
-            <br>
             Setiap bulan, pemerintah desa bersama dengan komunitas dan lembaga sosial setempat mengorganisirkan acara
             santunan. Acara ini diadakan di tempat-tempat yang telah disiapkan, seperti balai desa atau tempat ibadah,
             dengan suasana yang hangat dan penuh kepedulian.
-            <br>
             Selama acara santunan, anak-anak yatim piatu menerima bantuan berupa paket sembako yang berisi bahan makanan
             pokok dan kebutuhan sehari-hari lainnya. Selain itu, sering kali juga disediakan pakaian atau perlengkapan
             sekolah bagi anak-anak yang membutuhkannya.
-            <br>
             Kegiatan santunan ini tidak hanya memberikan bantuan material, tetapi juga merupakan wujud perhatian, kasih
             sayang, dan dukungan emosional bagi anak-anak yang kehilangan orang tua mereka. Acara ini juga menjadi
             kesempatan untuk mempererat hubungan antara masyarakat desa dan memberikan teladan nilai-nilai kepedulian
             sosial kepada generasi muda.
-            <br>
             Partisipasi dari seluruh lapisan masyarakat desa sangat diapresiasi dalam kegiatan santunan anak yatim piatu
             ini. Dengan gotong royong dan semangat kebersamaan, Desa Rawasari berkomitmen untuk terus mendukung dan
             menjaga kesejahteraan anak-anak yatim piatu, serta memperkuat solidaritas sosial dalam komunitasnya.',
@@ -112,14 +100,11 @@ Route::get('/', function () {
           'description' => 'Fun Tournament Cup Volley di Desa Rawasari adalah ajang kompetisi voli yang diadakan secara tahunan di desa
             ini. Turnamen ini dirancang untuk mempromosikan olahraga voli di kalangan warga desa dan sekitarnya, serta
             mempererat kebersamaan antarwarga melalui kegiatan yang menyenangkan dan kompetitif.
-            <br>
             Setiap tahunnya, sejumlah tim voli dari berbagai dusun di Desa Rawasari berpartisipasi dalam turnamen ini.
             Persiapan dimulai jauh-jauh hari dengan pendaftaran tim, pembagian grup, dan penentuan jadwal pertandingan.
-            <br>
             Pertandingan-pertandingan yang sengit dan penuh semangat dihelat di lapangan voli yang telah disiapkan
             dengan baik. Warga desa, mulai dari anak-anak hingga orang dewasa, turut serta menghadiri dan mendukung tim
             favorit mereka.
-            <br>
             Kegiatan ini tidak hanya mendukung gaya hidup sehat dan aktif, tetapi juga memperkuat rasa persatuan dan
             kebersamaan di antara seluruh warga Desa Rawasari. Dengan semangat kompetisi yang sehat dan nilai-nilai
             sportivitas yang tinggi, Fun Tournament Cup Volley Desa Rawasari menjadi salah satu momen yang dinantikan
@@ -133,11 +118,9 @@ Route::get('/', function () {
           'description' => ' Gedung serba guna di Desa Rawasari disahkan setelah melalui proses pembangunan yang memakan biaya sekitar
             900 juta rupiah. Gedung ini dirancang untuk menjadi pusat kegiatan masyarakat, yang dapat digunakan untuk
             berbagai acara seperti pertemuan komunitas, acara sosial, pelatihan, dan upacara adat.
-            <br>
             Pembangunan gedung dilakukan dengan memperhatikan kebutuhan warga desa, serta standar keamanan dan keamanan
             yang tinggi. Gedung ini dilengkapi dengan fasilitas modern seperti ruang pertemuan, dapur komunal, dan
             fasilitas toilet yang memadai untuk melayani kegiatan sehari-hari dan kebutuhan acara besar.
-            <br>
             Biaya sebesar 900 juta rupiah untuk pembangunan gedung ini mencakup pengadaan material bangunan, tenaga
             kerja, serta peralatan dan perabotan yang diperlukan. Proses pembangunan dilakukan dengan partisipasi aktif
             dari masyarakat desa, yang turut serta dalam kerja bakti dan gotong royong untuk mendukung pembangunan

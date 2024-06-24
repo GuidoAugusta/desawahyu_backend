@@ -40,7 +40,7 @@
                 class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300 img-fluid" />
               <span class="text-center text-md md:text-md block break-words text-primary-300 group-hover:text-white">Peta Desa</span>
             </a>
-            <a href="src/page/login.html"
+            <a href="/surat"
               class="inline-block group mb-1 px-4 py-3 lg:p-3 space-y-2 dark:border dark:border-gray-500 bg-white rounded-lg hover:bg-primary-100 transition ease-in-out duration-500 group-hover:font-bold">
               <img src="icons/buat_surat.png" alt="buat_surat"
                 class="px-3 h-12 w-20 md:h-16 md:w-24 object-contain group-hover:scale-110 transition duration-300 img-fluid" />
@@ -140,7 +140,7 @@
         </div>
         <!-- card end -->
         <!-- card start -->
-        <div class="CardSerbaSerbi bg-[url('misi_desa.png')]">
+        <div class="CardSerbaSerbi bg-[url('../../public/images/misi_desa.png')]">
           <a href="#" class="">
             <div class="bg-warning-200 w-32 h-16"></div>
             <div class="px-6 py-6">
