@@ -9,17 +9,21 @@ use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
-    {
-        User::factory(10)->create();
+  /**
+   * Seed the application's database.
+   */
+  public function run(): void
+  {
+    $this->call([
+      BeritaSeeder::class,
+    ]);
 
-        User::factory()->create([
-          'nama' => 'admin',
-          'password' => Hash::make('admin'),
-          'is_admin' => true
-        ]);
-    }
+    User::factory(10)->create();
+
+    User::factory()->create([
+      'nama' => 'admin',
+      'password' => Hash::make('admin'),
+      'is_admin' => true
+    ]);
+  }
 }
