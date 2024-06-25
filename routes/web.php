@@ -29,7 +29,7 @@ Route::get('/', function () {
             Untuk mendukung kelancaran kegiatan kerja bakti, pemerintah desa menyediakan alat dan bahan yang diperlukan,
             seperti sekop, sapu, karung sampah, dan peralatan lainnya. Warga juga diimbau untuk membawa alat kebersihan
             pribadi yang dimiliki.',
-          'url' => '#',
+          'url' => '/detailBerita',
       ],
       [
           'date' => \Carbon\Carbon::parse('2023-03-28'),
@@ -57,7 +57,7 @@ Route::get('/', function () {
           'title' => 'Kerja Bakti Menjelang Ramadhan',
           'description' => 'Di Desa Rawasari, melakukan kerja bakti menjelang Ramadhan menjadi tradisi yang dilakukan oleh seluruh
             masyarakat
-            desa. Kegiatan ini dilakukan untuk membersihkan dan mempersiapkan lingkungan desa agar siap menyambut bulan
+            desa. Kegiatan ini dilakukan untuk membersihkan dan mempersiapkan lingkungan desa agar siap menyambut bula
             suci Ramadhan dengan baik.
             Kerja bakti menjelang Ramadhan meliputi berbagai aktivitas, seperti pembersihan lingkungan desa, termasuk
             jalan-jalan utama, tempat ibadah, dan area publik lainnya. Warga desa bekerja bersama-sama membersihkan
@@ -112,7 +112,7 @@ Route::get('/', function () {
           'url' => '#',
       ],
       [
-          'date' => \Carbon\Carbon::parse('2024-07-28'),
+          'date' => \Carbon\Carbon::parse('2024-08-28'),
           'image' => '/images/gedung_serbaguna.jpg',
           'title' => 'Pengesahan Gedung Serba guna',
           'description' => ' Gedung serba guna di Desa Rawasari disahkan setelah melalui proses pembangunan yang memakan biaya sekitar

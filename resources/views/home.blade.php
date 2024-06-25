@@ -198,7 +198,7 @@
         {{-- berita --}}
         @foreach ($berita as $item)
         <div class="md:col-span-4 col-span-12 relative">
-          <div class="md:w-36 md:h-20 w-32 h-16 bg-warning-300 text-white font-bold flex justify-center items-center gap-3 absolute left-10">
+          <div class="md:w-48 md:h-16 w-48 h-16 bg-warning-300 text-white font-bold flex justify-center items-center gap-3 absolute left-10">
             <span class="md:text-5xl text-4xl">{{ $item['date']->format('d') }}</span>
             <div>
               <p class="md:text-xl text-lg">{{ $item['date']->format('F') }}</p>
