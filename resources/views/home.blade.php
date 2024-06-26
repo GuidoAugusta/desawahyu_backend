@@ -241,7 +241,7 @@
             @foreach ($beritas as $berita)
                 <div class="md:col-span-4 col-span-12 relative">
                     <div
-                        class="md:w-36 md:h-20 w-32 h-16 bg-warning-300 text-white font-bold flex justify-center items-center gap-3 absolute left-10">
+                        class="md:w-44 md:h-20 w-44 h-16 bg-warning-300 text-white font-bold flex justify-center items-center gap-3 absolute left-10">
                         <span class="md:text-5xl text-4xl">{{ $berita['published_at']->format('d') }}</span>
                         <div>
                             <p class="md:text-xl text-lg">{{ $berita['published_at']->format('F') }}</p>
@@ -298,7 +298,12 @@
             @endforeach
             {{-- berita --}}
         </div>
-        <div class="flex justify-center mt-8">
+        <div class="mt-10">
+            {{ $beritas->links() }}
+        </div>
+
+
+        {{-- <div class="flex justify-center mt-8">
             <ul class="inline-flex space-x-2 text-xl text-secondary-200">
                 <li>
                     <a href="" class="border border-secondary-200 inline-block p-2 rounded-full">
@@ -339,7 +344,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> --}}
         <!-- pagination end -->
     </section>
     <!-- berita terkini end -->

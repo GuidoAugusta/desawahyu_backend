@@ -8,7 +8,7 @@ use App\Http\Controllers\RegisterController;
 use App\Models\Berita;
 
 Route::get('/', function () {
-  $beritas = Berita::all();
+  $beritas = Berita::paginate(6);
 
   $galeri = [
     [
