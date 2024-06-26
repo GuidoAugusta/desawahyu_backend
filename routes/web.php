@@ -29,7 +29,8 @@ Route::get('/', function () {
             Untuk mendukung kelancaran kegiatan kerja bakti, pemerintah desa menyediakan alat dan bahan yang diperlukan,
             seperti sekop, sapu, karung sampah, dan peralatan lainnya. Warga juga diimbau untuk membawa alat kebersihan
             pribadi yang dimiliki.',
-          'url' => '/detailBerita',
+          'url' => '#',
+
       ],
       [
           'date' => \Carbon\Carbon::parse('2023-03-28'),
@@ -198,6 +199,9 @@ Route::get('/surat/sktm', function () {
     'title' => 'surat sktm'
   ]);
 });
+
+
+
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest') ;
 Route::post('/login', [LoginController::class, 'authenticate']);
