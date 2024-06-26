@@ -168,7 +168,6 @@
           <h1 class="md:text-6xl text-4xl font-bold my-3">Serba Serbi Desa</h1>
           <p class="font-light md:text-lg text-base"> <span class="font-semibold">Kenali Kampung Rawasari Lebih
               Dekat</span> <br>
-
             Website ini dikelola oleh Pemerintah Desa Rawasari, Kecamatan Malind, Kabupaten Merauke, yang bertujuan
             untuk membuka akses seluas-luasnya kepada masyarakat desa. Di sini, Anda dapat menemukan informasi terkait
             berbagai aspek kehidupan di Desa Rawasari, termasuk pengelolaan dana desa, capaian pembangunan, kegiatan
