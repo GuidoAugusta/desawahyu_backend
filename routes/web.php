@@ -200,6 +200,11 @@ Route::get('/surat/sktm', function () {
   ]);
 });
 
+Route::get('/test-page', function () {
+  return view('post.detailBerita', [
+      'title' => 'detail berita'
+  ]);
+  });
 
 
 
