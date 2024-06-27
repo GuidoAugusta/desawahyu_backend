@@ -14,7 +14,7 @@ class Berita extends Model
     protected $fillable = [
         'title',
         'slug',
-        // 'image',
+        'image',
         'content',
         'excerpt',
         'published_at'

@@ -7,6 +7,7 @@ use App\Http\Requests\StoreBeritaRequest;
 use App\Http\Requests\UpdateBeritaRequest;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class BeritaController extends Controller
@@ -41,12 +42,19 @@ class BeritaController extends Controller
             [
                 'title' => 'required|max:255',
                 'slug' => 'required|unique:beritas',
-                // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image' => 'image|file|mimes:jpeg,png,jpg|max:2048',
                 'content' => 'required',
             ]
         );
 
-        $validatedData['excerpt'] = Str::limit(str_replace("\n", " ", strip_tags($request->content)), 300, '...');
+        if ($request->file('image')) {
+            $validatedData['image'] = $request->file('image')->store('berita-images');
+        }
+
+        $content = $request->content;
+        $content = str_replace(["<br>", "<br/>", "<br />"], " ", $content);
+        $content = strip_tags($content);
+        $validatedData['excerpt'] = Str::limit($content, 300, '...');
         $validatedData['published_at'] = now();
 
         Berita::create($validatedData);
@@ -83,7 +91,7 @@ class BeritaController extends Controller
         $rules =
             [
                 'title' => 'required|max:255',
-                // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image' => 'image|file|mimes:jpeg,png,jpg|max:2048',
                 'content' => 'required',
             ];
 
@@ -92,6 +100,13 @@ class BeritaController extends Controller
         }
 
         $validatedData = $request->validate($rules);
+
+        if ($request->file('image')) {
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $validatedData['image'] = $request->file('image')->store('berita-images');
+        }
 
         $validatedData['excerpt'] = Str::limit(str_replace("\n", " ", strip_tags($request->content)), 300, '...');
         $validatedData['published_at'] = now();
@@ -105,6 +120,9 @@ class BeritaController extends Controller
      */
     public function destroy(Berita $berita)
     {
+        if ($berita->image) {
+            Storage::delete($berita->image);
+        }
         Berita::destroy($berita->id);
         return redirect('/dashboard/berita')->with('success', 'Berita berhasil dihapus');
     }

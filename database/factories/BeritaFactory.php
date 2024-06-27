@@ -23,7 +23,6 @@ class BeritaFactory extends Factory
         return [
             'title' => $title,
             'slug' => Str::slug($title),
-            // 'image' => 'https://picsum.photos/1200/600?random=' . rand(1, 1000),
             'content' => $content,
             'excerpt' => Str::limit(str_replace("\n", " ", strip_tags($content)), 300, '...'),
             'views_count' => $this->faker->numberBetween(0, 1000),

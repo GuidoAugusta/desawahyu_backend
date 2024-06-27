@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
-            // $table->string('image');
+            $table->string('image')->nullable();
             $table->text('content');
             $table->text('excerpt');
             $table->unsignedBigInteger('views_count')->default(0);

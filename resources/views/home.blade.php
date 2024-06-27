@@ -3,7 +3,8 @@
 
     <x-navbar></x-navbar>
     <!-- jumbotron start -->
-    <section class="bg-cover bg-no-repeat bg-[url('../../public/images/jumbotron.png')] bg-gray-700 bg-blend-multiply">
+    <section
+        class="bg-cover bg-no-repeat bg-[url('../../public/images/jumbotron.png')] bg-gray-700 bg-blend-multiply h-screen">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-28 lg:py-40 animate__animated animate__fadeIn ">
             <h1 class="mb-4 font-semibold tracking-tight leading-none text-white md:text-7xl text-4xl font-klee-one">
                 <span class="text-secondary-200">creative</span>village.id
@@ -249,13 +250,21 @@
                         </div>
                     </div>
                     {{-- <div class="ImageBerita bg-[url('{{$berita['image']}}')] "> --}}
-                    <img src="https://picsum.photos/1000/400?random=" alt="https://picsum.photos/1000/400?random="
-                        class="ImageBerita">
+                    @if ($berita->image)
+                        <div class="">
+                            <img src="{{ asset('storage/' . $berita->image) }}" alt="" class="ImageBerita">
+                        </div>
+                    @else
+                        <div class="">
+                            <img src="https://picsum.photos/1920/1080?random=" alt="" class="ImageBerita">
+
+                        </div>
+                    @endif
                     {{-- </div> --}}
                     <div class="w-4/5 mx-auto py-4 px-4 space-y-4 bg-white md:mt-56 mt-48 drop-shadow-lg">
                         <a href="#" class="uppercase font-bold text-xl line-clamp-2">{{ $berita['title'] }}</a>
-                        <p class="line-clamp-6 text-base font-light">
-                            {{ $berita['content'] }}
+                        <p class="line-clamp-6 text-base font-light whitespace-pre-line">
+                            {{ $berita->excerpt }}
                         </p>
                         <a href="#" class="btn-berita">
                             Selengkapnya
