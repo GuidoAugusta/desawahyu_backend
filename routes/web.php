@@ -16,27 +16,27 @@ Route::get('/', function () {
 
   $galeri = [
     [
-      'img' => 'https://i.pinimg.com/564x/5a/e7/f4/5ae7f4852a91687da8802f1642a46ed1.jpg',
+      'img' => '/images/pemandangan.jpg',
       'url' => '#'
     ],
     [
-      'img' => 'https://i.pinimg.com/564x/48/52/a6/4852a6fe7980f4e99f9f6bc8288739d5.jpg',
+      'img' => '/images/pemandian.jpg',
       'url' => '#'
     ],
     [
-      'img' => 'https://i.pinimg.com/564x/10/dc/98/10dc98d5f81a74a42625db16cd070a77.jpg',
+      'img' => '/images/kudalumping.jpg',
       'url' => '#'
     ],
     [
-      'img' => 'https://i.pinimg.com/564x/8b/86/e9/8b86e9ec9a993534375d44269d718003.jpg',
+      'img' => '/images/sunrice.jpg',
       'url' => '#'
     ],
     [
-      'img' => 'https://i.pinimg.com/564x/00/49/08/004908df6908bb32af3d9c29eae524a9.jpg',
+      'img' => '/images/panen_padi.jpg',
       'url' => '#'
     ],
     [
-      'img' => 'https://i.pinimg.com/564x/d4/b6/3c/d4b63c9aad939006d047bcd55bb834fc.jpg',
+      'img' => '/images/wayang.jpeg',
       'url' => '#'
     ]
   ];
@@ -89,7 +89,7 @@ Route::get('/surat/sktm', function () {
 
 Route::get('/dashboard', [AdminController::class, 'index'])->middleware('admin');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest') ;
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 
 Route::post('/login', [LoginController::class, 'authenticate']);
 
@@ -118,7 +118,7 @@ Route::post('/send-email', [EmailController::class, 'sendEmail']);
 Route::get('/cetak/sktm/{id}', [SktmController::class, 'cetak']);
 Route::delete('/hapus/sktm/{id}', [SktmController::class, 'destroy']);
 
-Route::get('/test' , function () {
+Route::get('/test', function () {
   return view('test', [
     'title' => 'test',
     'surat' => App\Models\Sktm::all(),

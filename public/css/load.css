@@ -1,0 +1,14 @@
+.content-display,
+.content-title,
+.content-image
+.content-description  {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.content-display.show,
+.content-title.show,
+.content-image.show
+.content-description.show {
+    opacity: 1;
+}
