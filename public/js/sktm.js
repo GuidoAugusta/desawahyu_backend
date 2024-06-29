@@ -1,5 +1,3 @@
-console.log('test');
-
 document.addEventListener('DOMContentLoaded',function(){
   const inputNama = document.getElementById('nama');
   const inputNik = document.getElementById('nik');
@@ -10,6 +8,26 @@ document.addEventListener('DOMContentLoaded',function(){
   const inputPekerjaan = document.getElementById('pekerjaan');
   const inputAlamat = document.getElementById('alamat');
 
+  const nameArea = document.getElementById('nameArea');
+  const nikArea = document.getElementById('nikArea');
+  const genderArea = document.getElementById('genderArea');
+  const lahirArea = document.getElementById('lahirArea');
+  const dateArea = document.getElementById('dateArea');
+  const agamaArea = document.getElementById('agamaArea');
+  const pekerjaanArea = document.getElementById('pekerjaanArea');
+  const alamatArea = document.getElementById('alamatArea');
+
+  // Populate fields on page load
+  nameArea.innerText = inputNama.value;
+  nikArea.innerText = inputNik.value;
+  genderArea.innerText = inputGender.value;
+  lahirArea.innerText = inputTempatLahir.value;
+  if (inputTanggalLahir.value) {
+    dateArea.innerText = inputTanggalLahir.value.split("-").reverse().join("-");
+  }
+  agamaArea.innerText = inputAgama.value;
+  pekerjaanArea.innerText = inputPekerjaan.value;
+  alamatArea.innerText = inputAlamat.value;
 
   inputNama.addEventListener('input',function(){
       const nameArea = document.getElementById('nameArea');
@@ -34,7 +52,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
   inputTanggalLahir.addEventListener('blur',function(){
       const dateArea = document.getElementById('dateArea');
-      dateArea.innerText = inputTanggalLahir.value;
+      let originalDate = inputTanggalLahir.value;
+      originalDate = originalDate.split("-").reverse().join("-");
+      dateArea.innerText = originalDate;
   })
 
   inputAgama.addEventListener('input',function(){
@@ -51,4 +71,5 @@ document.addEventListener('DOMContentLoaded',function(){
       const alamatArea = document.getElementById('alamatArea');
       alamatArea.innerText = inputAlamat.value;
   })
+
 })
