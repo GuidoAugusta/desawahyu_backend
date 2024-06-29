@@ -15,6 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            BeritaSeeder::class,
+        ]);
+  
         User::factory(3)->create();
         // Sktm::factory(3)->create();
 
@@ -29,10 +33,12 @@ class DatabaseSeeder extends Seeder
           'password' => Hash::make('123'),
         ]);
 
-        User::factory()->create([
-          'nama' => 'admin',
-          'password' => Hash::make('admin'),
-          'is_admin' => true
-        ]);
-    }
+    User::factory(10)->create();
+
+    User::factory()->create([
+      'nama' => 'admin',
+      'password' => Hash::make('admin'),
+      'is_admin' => true
+    ]);
+  }
 }
