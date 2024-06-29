@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Sktm;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -14,7 +15,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
+        User::factory(3)->create();
+        // Sktm::factory(3)->create();
+
+        User::factory()->create([
+          'nama' => 'test',
+          'email' => 'test@gmail.com',
+        ]);
+
+        User::factory()->create([
+          'nama' => 'Andi Mahardika Mulya',
+          'email' => 'andi.mahardika.mulya@gmail.com',
+          'password' => Hash::make('123'),
+        ]);
 
         User::factory()->create([
           'nama' => 'admin',

@@ -1,9 +1,13 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardSktmController;
+use App\Http\Controllers\SktmController;
+use App\Models\Sktm;
 
 Route::get('/', function () {
     $berita = [
@@ -107,19 +111,24 @@ Route::get('/surat', function () {
   return view('surat', [
     'title' => 'surat'
   ]);
-})->middleware('auth');
+})->middleware(['auth', 'check.status']);
 
 Route::get('/status-surat', function () {
+  $user = auth()->user();
   return view('statusSurat', [
-    'title' => 'status surat'
+    'title' => 'status surat',
+    // 'surat' => Sktm::where('user_id', auth()->user()->id)->get()
+    'surat' => $user->sktm
   ]);
-})->middleware('auth');
+})->middleware(['auth', 'check.status']);
 
 Route::get('/surat/sktm', function () {
-  return view('daftarSurat.sktm', [
+  return view('daftarSurat.form_sktm', [
     'title' => 'surat sktm'
   ]);
 });
+
+Route::get('/dashboard', [AdminController::class, 'index'])->middleware('admin');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest') ;
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -130,5 +139,23 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/admin', [LoginController::class, 'admin']);
 Route::post('/admin', [LoginController::class, 'authAdmin']);
 
-Route::resource('/dashboard', AdminController::class)->middleware('admin');
 Route::post('/logout', [LoginController::class, 'logout']);
+
+Route::resource('/dashboard/sktm', DashboardSktmController::class);
+Route::patch('/sktm/{id}/acceptStatus', [DashboardSktmController::class, 'acceptStatus']);
+Route::post('/sktm/{id}/rejectStatus', [DashboardSktmController::class, 'rejectStatus']);
+// pdf
+Route::get('/dashboard/sktm/{id}/cetak', [DashboardSktmController::class, 'cetak']);
+// email
+Route::post('/send-email', [EmailController::class, 'sendEmail']);
+
+// sktm controller
+Route::get('/cetak/sktm/{id}', [SktmController::class, 'cetak']);
+Route::delete('/hapus/sktm/{id}', [SktmController::class, 'destroy']);
+
+Route::get('/test' , function () {
+  return view('test', [
+    'title' => 'test',
+    'surat' => App\Models\Sktm::all(),
+  ]);
+});
