@@ -206,6 +206,11 @@ Route::get('/test-page', function () {
   ]);
   });
 
+  Route::get('/struktur-desa', function () {
+    return view('components.struktur-desa', [
+        'title' => 'sturktur desa'
+    ]);
+    });
 
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest') ;
