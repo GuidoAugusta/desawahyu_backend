@@ -124,4 +124,13 @@ class BeritaController extends Controller
         Berita::destroy($berita->id);
         return redirect('/dashboard/berita')->with('success', 'Berita berhasil dihapus');
     }
+
+    public function showDetailBerita($slug)
+    {
+        return view('detailBerita', [
+            'title' => 'Detail Berita',
+            'berita' => Berita::where('slug', $slug)->first(),
+            'beritaTerbaru' => Berita::where('slug', '!=', $slug)->orderBy('published_at', 'desc')->take(3)->get()
+        ]);
+    }
 }

@@ -21,6 +21,6 @@ class DetailBerita extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.detailBerita');
+        return view('detailBerita');
     }
 }

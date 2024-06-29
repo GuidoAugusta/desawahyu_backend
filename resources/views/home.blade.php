@@ -234,25 +234,34 @@
         {{-- card-container --}}
         <div class="grid grid-cols-12 gap-5">
             {{-- berita --}}
-            @foreach ($berita as $item)
+            @foreach ($beritas as $berita)
                 <div class="md:col-span-4 col-span-12 relative">
                     <div
-                        class="md:w-48 md:h-16 w-48 h-16 bg-warning-300 text-white font-bold flex justify-center items-center gap-3 absolute left-10">
-                        <span class="md:text-5xl text-4xl">{{ $item['date']->format('d') }}</span>
+                        class="md:w-44 md:h-20 w-44 h-16 bg-warning-300 text-white font-bold flex justify-center items-center gap-3 absolute left-10">
+                        <span class="md:text-5xl text-4xl">{{ $berita['published_at']->format('d') }}</span>
                         <div>
-                            <p class="md:text-xl text-lg">{{ $item['date']->format('F') }}</p>
-                            <p class="md:text-xl text-lg">{{ $item['date']->format('Y') }}</p>
+                            <p class="md:text-xl text-lg">{{ $berita['published_at']->format('F') }}</p>
+                            <p class="md:text-xl text-lg">{{ $berita['published_at']->format('Y') }}</p>
                         </div>
                     </div>
-                    {{-- <div class="ImageBerita bg-[url('{{$item['image']}}')] "> --}}
-                    <img src="{{ $item['image'] }}" alt="{{ $item['image'] }}" class="ImageBerita">
+                    {{-- <div class="ImageBerita bg-[url('{{$berita['image']}}')] "> --}}
+                    @if ($berita->image)
+                        <div class="">
+                            <img src="{{ asset('storage/' . $berita->image) }}" alt="" class="ImageBerita">
+                        </div>
+                    @else
+                        <div class="">
+                            <img src="https://picsum.photos/1920/1080?random=" alt="" class="ImageBerita">
+
+                        </div>
+                    @endif
                     {{-- </div> --}}
                     <div class="w-4/5 mx-auto py-4 px-4 space-y-4 bg-white md:mt-56 mt-48 drop-shadow-lg">
-                        <a href="{{ $item['url'] }}" class="uppercase font-bold text-xl">{{ $item['title'] }}</a>
-                        <p class="line-clamp-6 text-base font-light">
-                            {{ $item['description'] }}
+                        <a href="#" class="uppercase font-bold text-xl line-clamp-2">{{ $berita['title'] }}</a>
+                        <p class="line-clamp-6 text-base font-light whitespace-pre-line">
+                            {{ $berita->excerpt }}
                         </p>
-                        <a href="{{ $item['url'] }}" class="btn-berita">
+                        <a href="detailBerita/{{ $berita->slug }}" class="btn-berita">
                             Selengkapnya
                         </a>
                         <div class="flex gap-3 w-fit">
@@ -265,7 +274,7 @@
                                     <path stroke="currentColor" stroke-width="2"
                                         d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                 </svg>
-                                <span class="font-medium text-xs">999</span>
+                                <span class="font-medium text-xs">{{ $berita->views_count }}</span>
                             </a>
                             <a href="#" class="flex items-center justify-center">
                                 <svg class="w-5 h-5 text-secondary-200" aria-hidden="true"
@@ -275,7 +284,7 @@
                                         d="M3 5.983C3 4.888 3.895 4 5 4h14c1.105 0 2 .888 2 1.983v8.923a1.992 1.992 0 0 1-2 1.983h-6.6l-2.867 2.7c-.955.899-2.533.228-2.533-1.08v-1.62H5c-1.105 0-2-.888-2-1.983V5.983Zm5.706 3.809a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Zm2.585.002a1 1 0 1 1 .003 1.414 1 1 0 0 1-.003-1.414Zm5.415-.002a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <span class="font-medium text-xs">999</span>
+                                <span class="font-medium text-xs">{{ $berita->comments_count }}</span>
                             </a>
                             <a href="#" class="flex items-center justify-center">
                                 <svg class="w-5 h-5 text-secondary-200" aria-hidden="true"
@@ -285,7 +294,7 @@
                                         d="M15.03 9.684h3.965c.322 0 .64.08.925.232.286.153.532.374.717.645a2.109 2.109 0 0 1 .242 1.883l-2.36 7.201c-.288.814-.48 1.355-1.884 1.355-2.072 0-4.276-.677-6.157-1.256-.472-.145-.924-.284-1.348-.404h-.115V9.478a25.485 25.485 0 0 0 4.238-5.514 1.8 1.8 0 0 1 .901-.83 1.74 1.74 0 0 1 1.21-.048c.396.13.736.397.96.757.225.36.32.788.269 1.211l-1.562 4.63ZM4.177 10H7v8a2 2 0 1 1-4 0v-6.823C3 10.527 3.527 10 4.176 10Z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <span class="font-medium text-xs">999</span>
+                                <span class="font-medium text-xs">{{ $berita->likes_count }}</span>
                             </a>
                         </div>
                     </div>
@@ -293,49 +302,9 @@
             @endforeach
             {{-- berita --}}
         </div>
-        <div class="flex justify-center mt-8">
-            <ul class="inline-flex space-x-2 text-xl text-secondary-200">
-                <li>
-                    <a href="" class="border border-secondary-200 inline-block p-2 rounded-full">
-                        <svg class="w-5 h-5 text-secondary-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m15 19-7-7 7-7" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold bg-secondary-200 text-white">1</a>
-                </li>
-                <li>
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">2</a>
-                </li>
-                <li>
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">3</a>
-                </li>
-                <li class="hidden md:block">
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">4</a>
-                </li>
-                <li class="hidden md:block">
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">5</a>
-                </li>
-                <li>
-                    <a href="" class="border border-secondary-200 inline-block p-2 rounded-full">
-                        <svg class="w-5 h-5 text-secondary-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m9 5 7 7-7 7" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+        <div class="mt-10">
+            {{ $beritas->links() }}
         </div>
-        <!-- pagination end -->
     </section>
     <!-- berita terkini end -->
 

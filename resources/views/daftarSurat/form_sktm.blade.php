@@ -143,10 +143,10 @@
                     <img src="../images/logoSurat.png" alt="logo" class="h-full">
                 </div>
                 <div class="text-center ">
-                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">pemerintah kabupaten merauke</h1>
-                    <strong class="font-bold md:text-lg tracking-wide uppercase">kecamatan malind</strong>
-                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">Kampung rawasari</h1>
-                    <h5 class="font-medium text-xs tracking-wider">Jl.Anggrek - kode Pos 868686 </h5>
+                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">PEMERINTAH Kabupaten lombok barat</h1>
+                    <strong class="font-bold md:text-lg tracking-wide uppercase">KECAMATAN LANIAPPAI</strong>
+                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">Desa terong tawah</h1>
+                    <h5 class="font-medium text-xs tracking-wider">Jl.TGH. Mansyur - kode Pos 868686 </h5>
                 </div>
             </header>
 
@@ -159,136 +159,107 @@
                 </header>
                 {{-- <!-- isi --> --}}
                 <div class="text-lg text-wrap mt-8 font-normal ">
-                    <<<<<<< HEAD <p>yang bertanda tangan di bawah ini kepada kampung Rawasari, kecamatan Malind,
-                        Kabupaten Merauke menerangkan dengan sebenarnya, bahwa:</p>
-                        <table class="bg-white">
-                            =======
-                            <p>yang bertanda tangan di bawah ini kepada desa terog sawah, kecamatan Labu api,Kabupaten
-                                lombok barat menerangkan dengan sebenarnya,bahwa:</p>
-                            {{-- isi datdiri  --}}
-                            <div class="overflow-x-auto print:overflow-hidden">
-                                >>>>>>> origin/main
-                                {{-- nama --}}
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p>Nama </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2 text-wrap" id="nameArea">
-                                    </div>
-                                </div>
-                                {{-- nik --}}
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p>Nik </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2" id="nikArea">
-
-                                    </div>
-                                </div>
-                                {{-- kelamin --}}
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p>kelamin </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2" id="genderArea">
-                                    </div>
-                                </div>
-                                {{-- tempat, tanggal lahir --}}
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p>Tempat, Tanggal Lahir </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2">
-                                        <span id="lahirArea"></span>,
-                                        <span id="dateArea"></span>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p class="">Warganegara / Agama </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2">
-                                        <span id="negara">Indonesia</span> / <span id="agamaArea"> </span>
-                                    </div>
-                                </div>
-                                {{-- pekerjaan --}}
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p>Pekerjaan </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2" id="pekerjaanArea">
-                                    </div>
-                                </div>
-                                {{-- alamat --}}
-                                <div class="grid grid-cols-3 ">
-                                    <div class="col-span-1 flex justify-between">
-                                        <p>Alamat </p>
-                                        <p>: &nbsp;</p>
-                                    </div>
-                                    <div class="col-span-2" id="alamatArea">
-                                    </div>
-                                </div>
+                    <p>yang bertanda tangan di bawah ini kepada desa terog sawah, kecamatan Labu api,Kabupaten lombok
+                        barat menerangkan dengan sebenarnya,bahwa:</p>
+                    {{-- isi datdiri  --}}
+                    <div class="overflow-x-auto print:overflow-hidden">
+                        {{-- nama --}}
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p>Nama </p>
+                                <p>: &nbsp;</p>
                             </div>
-
-                            <p class="whitespace-pre-line">
-                                Nama tersebut diatas adalah benar warga Kampung Rawasari, kecamatan Malind, Kabupaten
-                                Merauke. Berdasarkan keterangan yang ada pada kami benar bahwa yang bersangkutan
-                                tergolong keluarga yang tidak mampu dan Surat Keterangan ini dibuat untuk
-                                <strong>Beasiswa</strong>
-
-                                Demikian surat keterangan ini dibuat, atas perhatian dan kerjasamanya kami ucapkan
-                                terima kasih.
-                            </p>
-
-                            <br>
-                            <!-- tanda tangan -->
-                            <div class="flex flex-row text-base">
-                                <div class="w-1/2 flex justify-center items-center">
-                                    <<<<<<< HEAD <div class="w-fit text-center">
-                                        <p>Mengetahui, </p>
-                                        <P>CAMAT MALIND</P>
-                                        <p class="border-b border-black mt-36"></p>
-                                        =======
-                                        <div class="w-fit text-center">
-                                            <p>Mengetahui</p>
-                                            <P>CAMAT LABUAPI</P>
-                                            <p class="border-b border-black mt-36"></p>
-                                            {{ \Carbon\Carbon::now()->format('d-m-Y') }}
-                                        </div>
-                                </div>
-                                <div class="w-1/2 text-center">
-                                    <div class="w-fit text-center ">
-                                        <p>TERONG SAWAH,<span id="dateSurat"></span></p>
-                                        <P>KEPALA DESA TERONG SAWAH</P>
-                                        <p class="border-b border-black mt-36"></p>
-                                        {{ \Carbon\Carbon::now()->format('d-m-Y') }}
-                                    </div>
-                                    >>>>>>> origin/main
-                                </div>
+                            <div class="col-span-2 text-wrap" id="nameArea">
+                            </div>
+                        </div>
+                        {{-- nik --}}
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p>Nik </p>
+                                <p>: &nbsp;</p>
+                            </div>
+                            <div class="col-span-2" id="nikArea">
 
                             </div>
-                            <div class="w-1/2 text-center">
-                                <div class="w-fit text-center ">
-                                    <p>Rawasari, 20 juni 2023<span id="dateSurat"></span></p>
-                                    <P>KEPALA KAMPUNG RAWASARI</P>
-                                    <p class="border-b border-black mt-36"></p>
-                                </div>
+                        </div>
+                        {{-- kelamin --}}
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p>kelamin </p>
+                                <p>: &nbsp;</p>
                             </div>
+                            <div class="col-span-2" id="genderArea">
+                            </div>
+                        </div>
+                        {{-- tempat, tanggal lahir --}}
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p>Tempat, Tanggal Lahir </p>
+                                <p>: &nbsp;</p>
+                            </div>
+                            <div class="col-span-2">
+                                <span id="lahirArea"></span>,
+                                <span id="dateArea"></span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p class="">Warganegara / Agama </p>
+                                <p>: &nbsp;</p>
+                            </div>
+                            <div class="col-span-2">
+                                <span id="negara">Indonesia</span> / <span id="agamaArea"> </span>
+                            </div>
+                        </div>
+                        {{-- pekerjaan --}}
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p>Pekerjaan </p>
+                                <p>: &nbsp;</p>
+                            </div>
+                            <div class="col-span-2" id="pekerjaanArea">
+                            </div>
+                        </div>
+                        {{-- alamat --}}
+                        <div class="grid grid-cols-3 ">
+                            <div class="col-span-1 flex justify-between">
+                                <p>Alamat </p>
+                                <p>: &nbsp;</p>
+                            </div>
+                            <div class="col-span-2" id="alamatArea">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="whitespace-pre-line">Nama tersebut diatas adalah benar warga Desa Terong Tawah, Kecamatan
+                        Labuapi, Kabupaten Lombok Barat. Berdasarkan keterangan yang ada pada kami benar bahwa yang
+                        bersangkutan tergolong keluarga yang tidak mampu. Surat Keterangan ini dibuat untuk
+                        <strong>Beasiswa.</strong>
+                        Demikian surat keterangan ini dibuat, atas perhatian dan kerjasamanya kami ucapkan terima kasih.
+                    </p>
+                    <br>
+                    <!-- tanda tangan -->
+                    <div class="flex flex-row text-base">
+                        <div class="w-1/2 flex justify-center items-center">
+                            <div class="w-fit text-center">
+                                <p>Mengetahui</p>
+                                <P>CAMAT LABUAPI</P>
+                                <p class="border-b border-black mt-36"></p>
+                                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
+                            </div>
+                        </div>
+                        <div class="w-1/2 text-center">
+                            <div class="w-fit text-center ">
+                                <p>TERONG SAWAH,<span id="dateSurat"></span></p>
+                                <P>KEPALA DESA TERONG SAWAH</P>
+                                <p class="border-b border-black mt-36"></p>
+                                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <<<<<<< HEAD </div>
-        <script src="../js/sktm.js"></script>
+    <script src="../js/sktm.js"></script>
 </x-layout>
-=======
-</div>
-<script src="../js/sktm.js"></script>
-</x-layout>
->>>>>>> origin/main

@@ -118,6 +118,14 @@ Route::post('/send-email', [EmailController::class, 'sendEmail']);
 Route::get('/cetak/sktm/{id}', [SktmController::class, 'cetak']);
 Route::delete('/hapus/sktm/{id}', [SktmController::class, 'destroy']);
 
+Route::get('/detailBerita/{berita:slug}', [BeritaController::class, 'showDetailBerita']);
+
+Route::get('/struktur-organisasi', function () {
+  return view('struktur_desa', [
+    'title' => 'struktur organisasi'
+  ]);
+});
+
 Route::get('/test', function () {
   return view('test', [
     'title' => 'test',
