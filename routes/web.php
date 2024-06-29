@@ -12,7 +12,7 @@ use App\Http\Controllers\SktmController;
 use App\Models\Sktm;
 
 Route::get('/', function () {
-  $beritas = Berita::paginate(6);
+  $beritas = Berita::orderBy('published_at', 'desc')->paginate(6);
 
   $galeri = [
     [

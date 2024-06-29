@@ -82,6 +82,11 @@
                 <div class="CardSurat ">
                     <div class="bg-[#F0F0F0] px-10 pt-16 pb-5 space-y-3">
                         <h1 class="text-2xl md:text-2xl font-bold text-black py-3">{{ $berita->title }}</h1>
+                        @if ($berita->image)
+                            <img src="{{ asset('storage/' . $berita->image) }}" alt="" class="w-[100%]">
+                        @else
+                            <img src="https://picsum.photos/1920/1080?random=" alt="" class="w-[100%]">
+                        @endif
                         <img src="{{ asset('storage/' . $berita->image) }}" alt="" class="w-[100%]">
                         <p>{!! $berita->content !!}</p>
                     </div>
@@ -186,7 +191,7 @@
                     </div>
                     <div class="border-l-2 border-b-2 border-r-2 border-[#CECECE] rounded-b-xl p-5 space-y-3">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7906.563680702332!2d110.40646580846457!3d-7.759904892226867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversity%20of%20Amikom%20Yogyakarta!5e0!3m2!1sen!2sus!4v1719657712038!5m2!1sen!2sus"
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
