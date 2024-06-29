@@ -24,7 +24,7 @@
     </div>
   </aside>
 
-  <div class="flex justify-center py-7 print:py-0"> 
+  <div class="flex justify-center py-7 print:py-0">
     <div class="max-w-[210mm] min-h-[297mm] bg-white p-8 w-full border-dashed border-4 rounded-lg border-gray-200 print:border-none print:rounded-none ">
       <header class="flex items-center justify-center border-b-2 print:border-b print:pb-1 relative border-black">
         <div class="h-24 absolute top-0 -left-5 overflow-hidden hidden xl:block print:left-5 print:-top-2 print:block">
@@ -46,7 +46,7 @@
         </header>
         {{-- <!-- isi --> --}}
         <div class="text-lg text-wrap mt-8 font-normal ">
-          <p>yang bertanda tangan di bawah ini kepada desa terog sawah, kecamatan Kendal, Kabupaten lombok barat menerangkan dengan sebenarnya,bahwa:</p>          
+          <p>yang bertanda tangan di bawah ini kepada desa terog sawah, kecamatan Kendal, Kabupaten lombok barat menerangkan dengan sebenarnya,bahwa:</p>
           {{--isi datdiri  --}}
           <div class="overflow-x-auto print:overflow-hidden">
             {{-- nama --}}
@@ -55,7 +55,7 @@
                   <p>Nama </p>
                   <p>: &nbsp;</p>
               </div>
-              <div class="col-span-2 text-wrap" id="nameArea">                
+              <div class="col-span-2 text-wrap" id="nameArea">
                 {{ ucfirst(trans($sktm->nama)) }}
               </div>
             </div>
@@ -75,8 +75,8 @@
                   <p>Kelamin  </p>
                   <p>: &nbsp;</p>
               </div>
-              <div class="col-span-2" id="genderArea">      
-                {{ $sktm->jenis_kelamin }}          
+              <div class="col-span-2" id="genderArea">
+                {{ $sktm->jenis_kelamin }}
               </div>
             </div>
             {{-- tempat, tanggal lahir --}}
@@ -84,7 +84,7 @@
               <div class="col-span-1 flex justify-between">
                   <p>Tempat, Tanggal Lahir </p>
                   <p>: &nbsp;</p>
-              </div>      
+              </div>
               <div class="col-span-2" >
                 <span id="lahirArea">{{ ucfirst(trans($sktm->tempat)) }}</span>,
                 <span id="dateArea">{{ \Carbon\Carbon::parse($sktm->tanggal_lahir)->format('d-m-Y') }}</span>
@@ -94,7 +94,7 @@
               <div class="col-span-1 flex justify-between">
                   <p class="">Warganegara / Agama </p>
                   <p>: &nbsp;</p>
-              </div> 
+              </div>
               <div class="col-span-2">
                 <span id="negara">Indonesia</span> / <span id="agamaArea">{{ ucfirst(trans($sktm->agama)) }}</span>
               </div>
@@ -105,7 +105,7 @@
                   <p>Pekerjaan </p>
                   <p>: &nbsp;</p>
               </div>
-              <div class="col-span-2" id="pekerjaanArea">                
+              <div class="col-span-2" id="pekerjaanArea">
                 {{ ucfirst(trans($sktm->pekerjaan)) }}
               </div>
             </div>
@@ -115,7 +115,7 @@
                   <p>Alamat </p>
                   <p>: &nbsp;</p>
               </div>
-              <div class="col-span-2" id="alamatArea">                
+              <div class="col-span-2" id="alamatArea">
                 {{ ucfirst(trans($sktm->alamat)) }}
               </div>
             </div>
@@ -126,20 +126,29 @@
           </p>
           <br>
           <!-- tanda tangan -->
-          <div class="flex flex-row text-base">
-            <div class="w-1/2 flex justify-center items-center">
-              <div class="w-fit text-center">
+          <div class="flex flex-row text-base ">
+            <div class="w-1/2 flex justify-center items-cente">
+              <div class="w-full text-center">
                 <p>Mengetahui</p>
                 <P>CAMAT LABUAPI</P>
-                <p class="border-b border-black mt-36"></p>
+                <div class=" flex justify-center  ">
+                    <div class="w-9/12 h-36 overflow-hidden border-b border-black">
+                        <img src="/tandaTangan/tanda_tangan1.jpg" alt="tanda-tangan" class="object-cover w-full">
+                    </div>
+                </div>
+
                 {{ \Carbon\Carbon::now()->format('d-m-Y') }}
               </div>
               </div>
                 <div class="w-1/2 text-center">
-                    <div class="w-fit text-center ">
+                    <div class="w-full text-center ">
                       <p>TERONG SAWAH,<span id="dateSurat"></span></p>
                       <P>KEPALA DESA TERONG SAWAH</P>
-                      <p class="border-b border-black mt-36"></p>
+                      <div class=" flex justify-center  ">
+                        <div class="w-9/12 h-36 overflow-hidden border-b border-black">
+                            <img src="/tandaTangan/tanda_tangan3.jpg" alt="tanda-tangan" class="object-cover w-full h-full">
+                        </div>
+                    </div>
                       {{ \Carbon\Carbon::now()->format('d-m-Y') }}
                     </div>
                 </div>
