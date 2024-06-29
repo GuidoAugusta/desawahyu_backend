@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Berita;
 use App\Http\Requests\StoreBeritaRequest;
 use App\Http\Requests\UpdateBeritaRequest;
-use Cviebrock\EloquentSluggable\Services\SlugService;
-use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -126,10 +124,4 @@ class BeritaController extends Controller
         Berita::destroy($berita->id);
         return redirect('/dashboard/berita')->with('success', 'Berita berhasil dihapus');
     }
-
-    // public function checkSlug(Request $request)
-    // {
-    //     $slug = SlugService::createSlug(Berita::class, 'slug', $request->title);
-    //     return response()->json(['slug' => $slug]);
-    // }
 }

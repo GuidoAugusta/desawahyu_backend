@@ -96,17 +96,5 @@
                 imgPreview.src = oFREvent.target.result;
             };
         }
-
-        // const title = document.querySelector('#title');
-        // const slug = document.querySelector('#slug');
-
-        // title.addEventListener('change', function() {
-        //     fetch('/dashboard/checkSlug?title=' + title.value)
-        //         .then(response => response.json())
-        //         .then(data => {
-        //             console.log('Slug response:', data); // Log untuk debugging
-        //             slug.value = data.slug;
-        //         })
-        // });
     </script>
 </x-layout>

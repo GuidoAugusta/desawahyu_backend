@@ -80,8 +80,6 @@ Route::get('/surat/sktm', function () {
   ]);
 });
 
-// Route::get('/dashboard/berita/', [BeritaController::class, 'index']);
-
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 
@@ -94,7 +92,6 @@ Route::post('/admin', [LoginController::class, 'authAdmin']);
 Route::get('/dashboard', [AdminController::class, 'index'])->middleware('admin');
 Route::post('/logout', [LoginController::class, 'logout'])->middleware('admin');
 
-// Route::get('/dashboard/checkSlug', [BeritaController::class, 'checkSlug'])->middleware('admin');
 Route::get('/berita/{berita:slug}', [BeritaController::class, 'show']);
 Route::resource('/dashboard/berita', BeritaController::class)->parameters([
   'berita' => 'berita'

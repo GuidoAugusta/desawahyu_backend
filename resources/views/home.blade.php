@@ -310,51 +310,6 @@
         <div class="mt-10">
             {{ $beritas->links() }}
         </div>
-
-
-        {{-- <div class="flex justify-center mt-8">
-            <ul class="inline-flex space-x-2 text-xl text-secondary-200">
-                <li>
-                    <a href="" class="border border-secondary-200 inline-block p-2 rounded-full">
-                        <svg class="w-5 h-5 text-secondary-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m15 19-7-7 7-7" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold bg-secondary-200 text-white">1</a>
-                </li>
-                <li>
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">2</a>
-                </li>
-                <li>
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">3</a>
-                </li>
-                <li class="hidden md:block">
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">4</a>
-                </li>
-                <li class="hidden md:block">
-                    <a href=""
-                        class="border border-secondary-200 inline-block py-1 px-3 rounded-full font-bold">5</a>
-                </li>
-                <li>
-                    <a href="" class="border border-secondary-200 inline-block p-2 rounded-full">
-                        <svg class="w-5 h-5 text-secondary-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m9 5 7 7-7 7" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div> --}}
-        <!-- pagination end -->
     </section>
     <!-- berita terkini end -->
 
