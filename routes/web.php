@@ -87,6 +87,24 @@ Route::get('/surat/sktm', function () {
   ]);
 });
 
+Route::get('/karang-taruna', function () {
+  return view('karang_taruna', [
+    'title' => 'karang taruna'
+  ]);
+});
+
+Route::get('/lembaga-desa', function () {
+  return view('lembaga_desa', [
+    'title' => 'lembaga desa'
+  ]);
+});
+
+Route::get('/perangkat-desa', function () {
+  return view('perangkat_desa', [
+    'title' => 'perangkat desa'
+  ]);
+});
+
 Route::get('/dashboard', [AdminController::class, 'index'])->middleware('admin');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (target === 'Kepala Desa') {
                     contentTitle.textContent = kepalaDesaContent.querySelector('h1').textContent;
                     contentImage.innerHTML = kepalaDesaContent.querySelector('img').outerHTML;
-                    contentDescription.innerHTML = kepalaDesaContent.querySelector('p').textContent;
                 }
 
                 // Tambahkan class 'show' untuk menampilkan konten

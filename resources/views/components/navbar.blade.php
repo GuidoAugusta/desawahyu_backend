@@ -56,8 +56,25 @@
                         class="z-10 hidden font-normal bg-gray-200 divide-y rounded-lg shadow w-80 md:w-44">
                         <ul class="py-2 text-sm text-gray-900" aria-labelledby="dropdownLargeButton">
                             <x-nav-link href="/struktur-organisasi">Struktur Organisasi</x-nav-link>
-                            <x-nav-link href="#">Perangkat Desa</x-nav-link>
-                            <x-nav-link href="#">Lembaga Desa</x-nav-link>
+                            <x-nav-link href="/perangkat-desa">Perangkat Desa</x-nav-link>
+                            <li>
+                                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                    data-dropdown-trigger="hover" data-dropdown-placement="right-start"
+                                    data-dropdown-delay=250 type="button" href="/lembaga-desa"
+                                    class="flex items-center justify-between w-full px-4 py-2">Lembaga
+                                    Desa<svg class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 9 4-4-4-4" />
+                                    </svg></button>
+                                <div id="doubleDropdown"
+                                    class="z-10 hidden bg-gray-200 divide-y divide-gray-100 rounded-lg">
+                                    <ul class="py-2 pe-4 text-sm text-gray-700 dark:text-gray-200"
+                                        aria-labelledby="doubleDropdownButton">
+                                        <x-nav-link href="/karang-taruna">Karang Taruna</x-nav-link>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -87,8 +104,8 @@
                         class="flex items-center justify-between w-full py-2 px-3 text-gray-900 md:text-white rounded md:p-0 md:w-auto">
                         LAYANAN MASYARAKAT<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
                         </svg>
                     </button>
                     <!-- dropdown Layanan menu -->
