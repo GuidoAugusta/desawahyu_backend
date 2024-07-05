@@ -8,23 +8,24 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Sktm extends Model
 {
-    use HasFactory;
+  use HasFactory;
 
-    protected $fillable = [
-      'nama',
-      'nik',
-      'jenis_kelamin',
-      'tempat',
-      'tanggal_lahir',
-      'agama',
-      'pekerjaan',
-      'alamat',
-      'email',
-      'ktp',
-      'user_id'
-    ];
+  protected $fillable = [
+    'nama',
+    'nik',
+    'jenis_kelamin',
+    'tempat',
+    'tanggal_lahir',
+    'agama',
+    'pekerjaan',
+    'alamat',
+    'email',
+    'ktp',
+    'user_id'
+  ];
 
-    public function user() : BelongsTo {
-      return $this->belongsTo(User::class);
-    }
+  public function user(): BelongsTo
+  {
+    return $this->belongsTo(User::class);
+  }
 }

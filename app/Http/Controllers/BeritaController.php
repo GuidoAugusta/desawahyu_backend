@@ -54,6 +54,7 @@ class BeritaController extends Controller
         $content = strip_tags($content);
         $validatedData['excerpt'] = Str::limit($content, 300, '...');
         $validatedData['published_at'] = now();
+        $validatedData['user_id'] = auth()->id();
 
         Berita::create($validatedData);
         return redirect('/dashboard/berita')->with('success', 'Berita berhasil ditambahkan');
@@ -108,6 +109,7 @@ class BeritaController extends Controller
 
         $validatedData['excerpt'] = Str::limit(str_replace("\n", " ", strip_tags($request->content)), 300, '...');
         $validatedData['published_at'] = now();
+        $validatedData['user_id'] = auth()->id();
 
         Berita::where('id', $berita->id)->update($validatedData);
         return redirect('/dashboard/berita')->with('success', 'Berita berhasil diubah');

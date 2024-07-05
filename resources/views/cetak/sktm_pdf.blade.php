@@ -34,10 +34,10 @@
                     <img src="/images/logoSurat.png" alt="logo" class="h-full">
                 </div>
                 <div class="text-center ">
-                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">PEMERINTAH Kabupaten lombok barat</h1>
-                    <strong class="font-bold md:text-lg tracking-wide uppercase">KECAMATAN LANIAPPAI</strong>
-                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">Desa terong tawah</h1>
-                    <h5 class="font-medium text-xs tracking-wider">Jl.TGH. Mansyur - kode Pos 868686 </h5>
+                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">PEMERINTAH Kabupaten Merauke</h1>
+                    <strong class="font-bold md:text-lg tracking-wide uppercase">KECAMATAN MALIND</strong>
+                    <h1 class="font-bold md:text-2xl tracking-wide uppercase">Desa Rawasari</h1>
+                    <h5 class="font-medium text-xs tracking-wider">Jl.TGH. Anggrek - kode Pos 99656 </h5>
                 </div>
             </header>
 
@@ -46,12 +46,12 @@
                 <header class="text-center mt-3">
                     <h1 class="font-bold md:text-lg uppercase underline print:underline-none ">surat keteragan tidak
                         mampu</h1>
-                    <h5>Nomor : 204/0015/TRI/2021</h5>
+                    <h5>Nomor : 204/0015/TRI/2024</h5>
                 </header>
                 {{-- <!-- isi --> --}}
                 <div class="text-lg text-wrap mt-8 font-normal ">
-                    <p>yang bertanda tangan di bawah ini kepada desa terog sawah, kecamatan Kendal, Kabupaten lombok
-                        barat menerangkan dengan sebenarnya,bahwa:</p>
+                    <p>Yang bertanda tangan di bawah ini, Kepala Desa Rawasari, Kecamatan Malind, Kabupaten Merauke,
+                        menerangkan dengan sebenarnya bahwa:</p>
                     {{-- isi datdiri  --}}
                     <div class="overflow-x-auto print:overflow-hidden">
                         {{-- nama --}}
@@ -128,40 +128,41 @@
                         </div>
                     </div>
 
-                    <p class="whitespace-pre-line">Nama tersebut diatas adalah benar warga Desa Terong Tawah, Kecamatan
-                        Labuapi, Kabupaten Lombok Barat. Berdasarkan keterangan yang ada pada kami benar bahwa yang
+                    <p class="pt-2">Nama tersebut diatas adalah benar warga Desa Rawasari, Kecamatan
+                        Malind, Kabupaten Merauke. Berdasarkan keterangan yang ada pada kami benar bahwa yang
                         bersangkutan tergolong keluarga yang tidak mampu. Surat Keterangan ini dibuat untuk
-                        <strong>Beasiswa.</strong>
+                        <strong>Beasiswa.</strong><br><br>
                         Demikian surat keterangan ini dibuat, atas perhatian dan kerjasamanya kami ucapkan terima kasih.
                     </p>
-                    <br>
+                    <br><br>
                     <!-- tanda tangan -->
                     <div class="flex flex-row text-base ">
                         <div class="w-1/2 flex justify-center items-cente">
                             <div class="w-full text-center">
-                                <p>Mengetahui</p>
-                                <P>CAMAT LABUAPI</P>
+                                <p>Mengetahui,</p>
+                                <P>CAMAT MALIND</P>
                                 <div class=" flex justify-center  ">
-                                    <div class="w-9/12 h-36 overflow-hidden border-b border-black">
+                                    <div class="w-9/12 h-36 overflow-hidden border-black">
                                         <img src="/tandaTangan/tanda_tangan1.jpg" alt="tanda-tangan"
                                             class="object-cover w-full">
                                     </div>
                                 </div>
-
-                                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
+                                <p class="uppercase font-bold">Andi Mahardika Mulya</p>
                             </div>
                         </div>
                         <div class="w-1/2 text-center">
                             <div class="w-full text-center ">
-                                <p>TERONG SAWAH,<span id="dateSurat"></span></p>
-                                <P>KEPALA DESA TERONG SAWAH</P>
+                                <p>RAWASARI, <span
+                                        id="dateSurat">{{ \Carbon\Carbon::now()->locale('id')->translatedFormat('d F Y') }}</span>
+                                </p>
+                                <P>KEPALA DESA RAWASARI</P>
                                 <div class=" flex justify-center  ">
-                                    <div class="w-9/12 h-36 overflow-hidden border-b border-black">
+                                    <div class="w-9/12 h-36 overflow-hidden">
                                         <img src="/tandaTangan/tanda_tangan3.jpg" alt="tanda-tangan"
                                             class="object-cover w-full h-full">
                                     </div>
                                 </div>
-                                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
+                                <p class="uppercase font-bold">Wahyu Anang Zulfikri</p>
                             </div>
                         </div>
                     </div>

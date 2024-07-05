@@ -127,42 +127,42 @@
                             </div>
                         </div>
                     </div> {{-- Close the missing div --}}
-                </div>
-
-                <p class="whitespace-pre-line">Nama tersebut diatas adalah benar warga Desa Rawasari, Kecamatan
-                    Malind, Kabupaten Merauke. Berdasarkan keterangan yang ada pada kami benar bahwa yang
-                    bersangkutan tergolong keluarga yang tidak mampu. Surat Keterangan ini dibuat untuk
-                    <strong>Beasiswa.</strong>
-                    Demikian surat keterangan ini dibuat, atas perhatian dan kerjasamanya kami ucapkan terima kasih.
-                </p>
-                <br>
-                <!-- tanda tangan -->
-                <div class="flex flex-row text-base ">
-                    <div class="w-1/2 flex justify-center items-cente">
-                        <div class="w-full text-center">
-                            <p>Mengetahui,</p>
-                            <P>CAMAT MALIND</P>
-                            <div class=" flex justify-center  ">
-                                <div class="w-9/12 h-36 overflow-hidden border-b border-black">
-                                    <img src="/tandaTangan/tanda_tangan1.jpg" alt="tanda-tangan"
-                                        class="object-cover w-full">
+                    <p class="pt-2">Nama tersebut diatas adalah benar warga Desa Rawasari, Kecamatan
+                        Malind, Kabupaten Merauke. Berdasarkan keterangan yang ada pada kami benar bahwa yang
+                        bersangkutan tergolong keluarga yang tidak mampu. Surat Keterangan ini dibuat untuk
+                        <strong>Beasiswa.</strong><br><br>
+                        Demikian surat keterangan ini dibuat, atas perhatian dan kerjasamanya kami ucapkan terima kasih.
+                    </p>
+                    <br><br>
+                    <!-- tanda tangan -->
+                    <div class="flex flex-row text-base ">
+                        <div class="w-1/2 flex justify-center items-cente">
+                            <div class="w-full text-center">
+                                <p>Mengetahui,</p>
+                                <P>CAMAT MALIND</P>
+                                <div class=" flex justify-center  ">
+                                    <div class="w-9/12 h-36 overflow-hidden">
+                                        <img src="/tandaTangan/tanda_tangan1.jpg" alt="tanda-tangan"
+                                            class="object-cover w-full">
+                                    </div>
                                 </div>
+                                <p class="uppercase font-bold">Andi Mahardika Mulya</p>
                             </div>
-
-                            {{ \Carbon\Carbon::now()->format('d-m-Y') }}
                         </div>
-                    </div>
-                    <div class="w-1/2 text-center">
-                        <div class="w-full text-center ">
-                            <p>RAWASARI,<span id="dateSurat"></span></p>
-                            <P>KEPALA DESA RAWASARI</P>
-                            <div class=" flex justify-center  ">
-                                <div class="w-9/12 h-36 overflow-hidden border-b border-black">
-                                    <img src="/tandaTangan/tanda_tangan3.jpg" alt="tanda-tangan"
-                                        class="object-cover w-full h-full">
+                        <div class="w-1/2 text-center">
+                            <div class="w-full text-center ">
+                                <p>RAWASARI, <span
+                                        id="dateSurat">{{ \Carbon\Carbon::now()->locale('id')->translatedFormat('d F Y') }}</span>
+                                </p>
+                                <P>KEPALA DESA RAWASARI</P>
+                                <div class=" flex justify-center  ">
+                                    <div class="w-9/12 h-36 overflow-hidden">
+                                        <img src="/tandaTangan/tanda_tangan3.jpg" alt="tanda-tangan"
+                                            class="object-cover w-full h-full">
+                                    </div>
                                 </div>
+                                <p class="uppercase font-bold">Wahyu Anang Zulfikri</p>
                             </div>
-                            {{ \Carbon\Carbon::now()->format('d-m-Y') }}
                         </div>
                     </div>
                 </div>

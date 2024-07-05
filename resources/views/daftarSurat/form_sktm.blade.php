@@ -231,29 +231,29 @@
                         </div>
                     </div>
 
-                    <p class="whitespace-pre-line">Nama tersebut diatas adalah benar warga Desa Rawasari, Kecamatan
+                    <p class="pt-2">Nama tersebut diatas adalah benar warga Desa Rawasari, Kecamatan
                         Malind, Kabupaten Merauke. Berdasarkan keterangan yang ada pada kami benar bahwa yang
                         bersangkutan tergolong keluarga yang tidak mampu. Surat Keterangan ini dibuat untuk
-                        <strong>Beasiswa.</strong>
+                        <strong>Beasiswa.</strong><br><br>
                         Demikian surat keterangan ini dibuat, atas perhatian dan kerjasamanya kami ucapkan terima kasih.
                     </p>
-                    <br>
+                    <br><br>
                     <!-- tanda tangan -->
                     <div class="flex flex-row text-base">
                         <div class="w-1/2 flex justify-center items-center">
                             <div class="w-fit text-center">
                                 <p>Mengetahui,</p>
                                 <P>CAMAT MALIND</P>
-                                <p class="border-b border-black mt-36"></p>
-                                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
+                                <p class="mt-36 uppercase font-bold">Andi Mahardika Mulya</p>
                             </div>
                         </div>
                         <div class="w-1/2 text-center">
                             <div class="w-fit text-center ">
-                                <p>RAWASARI,<span id="dateSurat"></span></p>
+                                <p>RAWASARI, <span
+                                        id="dateSurat">{{ \Carbon\Carbon::now()->locale('id')->translatedFormat('d F Y') }}</span>
+                                </p>
                                 <P>KEPALA DESA RAWASARI</P>
-                                <p class="border-b border-black mt-36"></p>
-                                {{ \Carbon\Carbon::now()->format('d-m-Y') }}
+                                <p class="mt-36 uppercase font-bold">Wahyu anang zulfikri</p>
                             </div>
                         </div>
                     </div>

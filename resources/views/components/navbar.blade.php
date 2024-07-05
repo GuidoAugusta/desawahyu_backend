@@ -58,7 +58,7 @@
                             <x-nav-link href="/struktur-organisasi">Struktur Organisasi</x-nav-link>
                             <x-nav-link href="/perangkat-desa">Perangkat Desa</x-nav-link>
                             <li>
-                                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                <a id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
                                     data-dropdown-trigger="hover" data-dropdown-placement="right-start"
                                     data-dropdown-delay=250 type="button" href="/lembaga-desa"
                                     class="flex items-center justify-between w-full px-4 py-2">Lembaga
@@ -66,7 +66,7 @@
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m1 9 4-4-4-4" />
-                                    </svg></button>
+                                    </svg></a>
                                 <div id="doubleDropdown"
                                     class="z-10 hidden bg-gray-200 divide-y divide-gray-100 rounded-lg">
                                     <ul class="py-2 pe-4 text-sm text-gray-700 dark:text-gray-200"
