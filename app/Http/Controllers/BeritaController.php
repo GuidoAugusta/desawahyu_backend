@@ -129,9 +129,17 @@ class BeritaController extends Controller
 
     public function showDetailBerita($slug)
     {
+        // Ambil objek Berita berdasarkan slug
+        $berita = Berita::where('slug', $slug)->first();
+
+        // Inkrementasi views_count
+        if ($berita) {
+            $berita->increment('views_count');
+        }
+
         return view('detailBerita', [
             'title' => 'Detail Berita',
-            'berita' => Berita::where('slug', $slug)->first(),
+            'berita' => $berita,
             'beritaTerbaru' => Berita::where('slug', '!=', $slug)->orderBy('published_at', 'desc')->take(3)->get()
         ]);
     }
