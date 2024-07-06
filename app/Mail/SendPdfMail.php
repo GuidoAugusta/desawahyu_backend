@@ -45,7 +45,7 @@ class SendPdfMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.send_pdf', 
+            view: 'mail.send_pdf',
         );
     }
 
