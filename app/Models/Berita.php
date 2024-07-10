@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Carbon\Carbon;
 
@@ -17,7 +18,8 @@ class Berita extends Model
         'image',
         'content',
         'excerpt',
-        'published_at'
+        'published_at',
+        'user_id'
     ];
 
     protected $dates = ['published_at'];
@@ -39,5 +41,10 @@ class Berita extends Model
                 'source' => 'title'
             ]
         ];
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

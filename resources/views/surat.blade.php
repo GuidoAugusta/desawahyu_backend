@@ -79,7 +79,11 @@
         </form>
         <!-- search -->
 
-        <x-card-surat :link="'/surat/sktm'">Surat keterangan Tidak Mampu</x-card-surat>
+        <div class="grid grid-cols-12 gap-5 md:px-0 px-8">
+            <x-card-surat :link="'/surat/sktm'" :img="'images/sktm.jpg'">Surat Keterangan Tidak Mampu</x-card-surat>
+            <x-card-surat :link="'/surat/sktm'" :img="'images/sk_kematian.jpg'">Surat Kematian</x-card-surat>
+            <x-card-surat :link="'/surat/sktm'" :img="'images/suratpindah.png'">Surat Keterangan Pindah</x-card-surat>
+        </div>
 
     </section>
 

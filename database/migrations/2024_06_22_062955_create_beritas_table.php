@@ -21,7 +21,8 @@ return new class extends Migration
             $table->unsignedBigInteger('views_count')->default(0);
             $table->unsignedBigInteger('comments_count')->default(0);
             $table->unsignedBigInteger('likes_count')->default(0);
-            $table->timestamp('published_at')->nullable;
+            $table->timestamp('published_at')->nullable();
+            $table->foreignId('user_id')->nullable();
             $table->timestamps();
         });
     }

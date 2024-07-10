@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Send PDF Mail</title>
+    <title>SURAT KETERANGAN TIDAK MAMPU</title>
 </head>
+
 <body>
-    <h1>Surat {{ $surat }} atas nama {{ ucfirst(trans($nama)) }}</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci eveniet obcaecati veniam eos omnis nam excepturi perspiciatis autem quo ex sunt, blanditiis enim odio maxime repellendus minus molestiae corporis?</p>
+    <h1>Hallo {{ ucfirst(trans($nama)) }}, Pengajuan Surat {{ $surat }} Telah diterima.</h1>
+    <p>Dengan ini kami informasikan bahwa surat permohonan Anda telah disetujui oleh pihak Kampung Rawasari. Silakan
+        unduh surat tersebut melalui lampiran berikut untuk keperluan Anda selanjutnya.</p>
+    <p>Terima Kasih, <br>
+        Admin Kampung Rawasari</p>
 </body>
+
 </html>

@@ -64,11 +64,11 @@
                     </div>
                     <div class="md:flex gap-3 items-center">
                         <img src="../icons/user.svg" alt="" class="w-6 md:w-6 mx-auto">
-                        <span class="text-sm font-medium md:text-xl">Gudio</span>
+                        <span class="text-sm font-medium md:text-xl">Guido</span>
                     </div>
                     <div class="md:flex gap-3 items-center">
                         <img src="../icons/book.svg" alt="" class="w-10 md:w-9 mx-auto">
-                        <span class="text-sm font-medium md:text-xl">Dibaca 10 kali</span>
+                        <span class="text-sm font-medium md:text-xl">Dibaca {{ $berita->views_count }} kali</span>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,6 @@
                         @else
                             <img src="https://picsum.photos/1920/1080?random=" alt="" class="w-[100%]">
                         @endif
-                        <img src="{{ asset('storage/' . $berita->image) }}" alt="" class="w-[100%]">
                         <p>{!! $berita->content !!}</p>
                     </div>
                     <span

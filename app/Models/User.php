@@ -46,7 +46,13 @@ class User extends Authenticatable
         ];
     }
 
-    public function sktm() : HasMany {
-      return $this->hasMany(Sktm::class);
+    public function sktm(): HasMany
+    {
+        return $this->hasMany(Sktm::class);
+    }
+
+    public function berita(): HasMany
+    {
+        return $this->hasMany(Berita::class);
     }
 }
